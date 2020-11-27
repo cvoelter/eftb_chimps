@@ -1,0 +1,537 @@
+---
+title: "EF tasks markdown 2020"
+author: "Christoph Voelter"
+date: "January 26, 2020"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+rm(list=ls())
+library(tidyverse)
+library(sjPlot)
+library(psych)
+library(summarytools)
+library(blavaan)
+library(car)
+load("bcfi_chimps_5k_iterations_centeredSite.RData")
+```
+
+### Selection of task DVs
+* All DVs have been scaled to values between 0 and 1 with higher values indicating better performance.
+* Inhibition tasks: proportion correct in *first session*. 
+First session performance shows signature of prepotent response. Increase of side biases in the second session of the inhibition boxes task.  Previous findings with the WKPRC chimpanzees showed performance improvements in the inhibition cylinder task within the first session. Comparability to children who completed only one session. 
+* Shifting tasks: Shifting Boxes: Proportion correct in the CD phase (as measure of susceptibility to interference from anonther stimulus dimension); Shifting Shelf task:  proportion of platform switches; Shifting Trays task: proportion correct in session 2. DVs were selected that show large individual variation and above chance performance (in contrast to the ED phase in the Shifting Boxes task and the first session in the Shifting Tray task).
+* Working memory: WM Boxes and WM Updating (both platforms): proportion of correct choices; WM Grid: proximity of first choice to the baited compartment (ranging between 0 and 1). DVs capture the test performance (in the presence of a secondary task).
+
+
+
+```{r loading data}
+
+EF_task_data <- read.csv(file="EF_task_individual_corr.csv")%>%
+  rename(WMUpdating="Updating_P1P2.correct",
+         WMBoxes="boxes_correct_newrange",
+         WMGrid="Grid_Distance_newrange",
+         InhibGrid="Inh.grid.correct1",
+         Cylinder="Inh.cylinders.correct1",
+         GlassCeiling="Inh.boxes.correct1",
+         Tray="Shifting.tray.correct.S2",
+         Shelf="proportion_switches",
+         CD_all="CD")
+
+view(dfSummary(EF_task_data))
+
+```
+Missing values:
+Total number of individuals: 53 (two subjects excluded)
+Complete cases: 48 completed all 9 tasks
+Incomplete cases: 
+* George completed 1 task (inhibition grid) --> exclude
+* Saidia completed 2 tasks (inhibition grid and inhibition cylinder) --> exclude
+* Edvard completed 7 tasks (all except inhibition grid and inhibition cylinder). Edvard did not eat peanuts and therefore did not engage in the inhibition cylinder task,
+* Jane completed 8 tasks (all except inhibition cylinder). Jane found a  transprent closed cylidners before the first session due to remaining cylinders in one of the enclosures
+* Julia completed 8 tasks (all except shifting shelf). Julia did not finish training 2 (not motivated)
+* Mwanzo completed 8 tasks (all except shifting shelf). Mwanzo failed Training 1 within 72 trials. * Safari completed 7  tasks (all except shifting shelf and shifting tray). Safari refused to participate in more than a few trials per day. He completed 11 trials in the shifting tray task within 4 days. Safari did not finish training 1 in the shifting shelf task.
+(* Tess completed all 9  tasks but did not receive the simple reversal task due to an experimenter mistake)
+* Mawa completed all tasks but his second inhibition cylinder session cannot be counted.
+
+```{r}
+cfa.data<-EF_task_data%>%
+  select(-ED, -SD, -SR,-ID, -site, -Group, -Sex, -Age)%>%
+  rename("WM Updating"="WMUpdating",
+         "WM Boxes"="WMBoxes",
+         "WM Grid"="WMGrid",
+         "Inhibition Grid"="InhibGrid",
+         "Inhibition Boxes"="GlassCeiling",
+         "inhibition Cylinder" = "Cylinder",
+         "Shifting Tray"="Tray",
+         "Shifting Shelf"="Shelf",
+         "Shifting Boxes"="CD_all")
+
+cfa.data.agg<-cfa.data%>%
+  select(-Subject)%>%
+  summarise_all(funs(mean=mean,sd=sd, n=sum(!is.na(.))),na.rm = TRUE)%>%
+    t %>% 
+  as.data.frame %>% 
+  add_rownames %>%
+  separate(rowname, into = c("feature", "fun"), sep = "_")%>%
+  spread(fun, V1)%>%
+  mutate(proportion_participants=n/53)
+
+write.csv(cfa.data.agg, file="chimp_descriptives.csv")
+
+```
+
+
+```{r }
+# Center and scale the factors
+#EF_task_data[,-(1)] = scale(EF_task_data[,-(1)])
+
+uganda.data <- EF_task_data %>%
+  filter(site=="uganda")%>%
+  select(-site,  -Group, -Sex, -Age)
+
+kenya.data <- EF_task_data %>%
+  filter(site=="kenya")%>%
+  select(-site,  -Group, -Sex, -Age)
+
+uganda.data[,-(1)] = scale(uganda.data[,-(1)], scale = FALSE)
+kenya.data[,-(1)] = scale(kenya.data[,-(1)], , scale = FALSE)
+
+EF_task_data <- uganda.data %>%
+  full_join(kenya.data)%>%
+  mutate_if(is.numeric, ~scale(., center = FALSE))
+  
+summary(EF_task_data)
+write.csv(EF_task_data, file = "EFTB_CFA_data_chimpanzees.csv")
+```
+## Histograms
+```{r}
+efa.data<-EF_task_data%>%
+  select(-Subject,  -ED, -SD, -SR,-ID)%>%
+  drop_na%>%
+  rename("WM Updating"="WMUpdating",
+         "WM Boxes"="WMBoxes",
+         "WM Grid"="WMGrid",
+         "Inhibition Cylinder" = "Cylinder",
+         "Inhibition Grid"="InhibGrid",
+         "Inhibition Boxes"="GlassCeiling",
+         "Shifting Tray"="Tray",
+         "Shifting Shelf"="Shelf",
+         "Shifting Boxes"="CD_all")
+efa.data<-efa.data%>%
+  select(order(colnames(efa.data)))
+
+png(filename = "graphics/Chimpanzee_DVs_Histograms_centered_by_site.png")
+multi_hist <- multi.hist(efa.data)
+dev.off()
+```
+
+### Fit CFA models
+```{r }
+
+#orthogonal = True
+fit_model = function(model) {
+    fit = bcfa(model, data = EF_task_data, orthogonal=TRUE, adapt = 500, burnin = 2500, sample=5000, n.chains = 4,control=list(adapt_delta=0.95), bcontrol = list(cores=4))
+    return(fit)
+}
+
+#orthogonal = FALSE
+fit_model_not_orth = function(model) {
+    fit = bcfa(model, data = EF_task_data, orthogonal=FALSE, adapt = 500, burnin = 2500, sample=5000, n.chains = 4,control=list(adapt_delta=0.95), bcontrol = list(cores=4))
+    return(fit)
+}
+
+
+model.1factor <- 'F1_CommonEF =~  GlassCeiling +  Cylinder + InhibGrid + CD_all + Shelf + Tray + WMBoxes + WMGrid + WMUpdating'
+
+model.MF2012 <- 'F1_WM =~  WMBoxes + WMGrid + WMUpdating
+                F2_Shifting =~  CD_all + Shelf + Tray
+                F3_CommonEF =~  GlassCeiling +  Cylinder + InhibGrid + CD_all + Shelf + Tray + WMBoxes + WMGrid + WMUpdating'
+
+model.3factors <- 'F1_WM =~  WMBoxes + WMGrid + WMUpdating
+                F2_Shifting =~  CD_all + Shelf + Tray
+                  F3_Inhibition =~  GlassCeiling +  Cylinder + InhibGrid'
+
+
+model.3factors_ind <- 'F1_WM =~  WMBoxes + WMGrid + WMUpdating
+                F2_Shifting =~  CD_all + Shelf + Tray
+                  F3_Inhibition =~  GlassCeiling +  Cylinder + InhibGrid'
+
+model.2factors1 <- 'F1_2_WM_Shifting =~  WMBoxes + WMGrid + WMUpdating+ CD_all + Shelf + Tray
+                   F3_Inhibition =~  GlassCeiling +  Cylinder + InhibGrid'
+
+model.2factors2 <- 'F1_3_WM_Inh =~  GlassCeiling +  Cylinder + InhibGrid + WMBoxes + WMGrid + WMUpdating
+                    F2_Shifting =~  CD_all + Shelf + Tray'
+
+model.2factors3 <- 'F1_WM =~  WMBoxes + WMGrid + WMUpdating
+                    F2_3_Shifting_Inh=~ GlassCeiling +  Cylinder + InhibGrid + CD_all + Shelf + Tray'
+
+model.9factors <- 'F1 =~  GlassCeiling
+              F2 =~  Cylinder
+              F3 =~  InhibGrid
+              F4 =~  CD_all
+              F5 =~  Shelf
+              F6 =~  Tray
+              F7 =~  WMBoxes
+              F8 =~  WMGrid
+              F9 =~  WMUpdating'
+
+
+# Fit each of the models
+bfit.1factor = fit_model(model.1factor)
+bfit.MF2012 = fit_model(model.MF2012)
+bfit.3factors = fit_model_not_orth(model.3factors)
+bfit.3factors_ind = fit_model(model.3factors_ind)
+bfit.2factors1 = fit_model(model.2factors1)
+bfit.2factors2 = fit_model(model.2factors2)
+bfit.2factors3 = fit_model(model.2factors3)
+bfit.9factors = fit_model(model.9factors)
+
+save.image("bcfi_chimps_5k_iterations_centeredSite.RData")
+```
+
+
+```{r}
+# Compare models to the 1-factor model
+f1_MF2012 <- blavCompare(bfit.1factor, bfit.MF2012)
+f1_3f <-blavCompare(bfit.1factor, bfit.3factors)
+f1_3f_ind <-blavCompare(bfit.1factor, bfit.3factors_ind)
+f1_2f1 <-blavCompare(bfit.1factor, bfit.2factors1)
+f1_2f2 <-blavCompare(bfit.1factor, bfit.2factors2)
+f1_2f3 <-blavCompare(bfit.1factor, bfit.2factors3)
+f1_9f <-blavCompare(bfit.1factor, bfit.9factors)
+
+# Compare models to the 9-factor model
+f9_1f <-blavCompare(bfit.9factors, bfit.1factor)
+f9_MF2012 <- blavCompare(bfit.9factors, bfit.MF2012)
+f9_3f <-blavCompare(bfit.9factors, bfit.3factors)
+f9_3f_ind <-blavCompare(bfit.9factors, bfit.3factors_ind)
+f9_2f1 <-blavCompare(bfit.9factors, bfit.2factors1)
+f9_2f2 <-blavCompare(bfit.9factors, bfit.2factors2)
+f9_2f3 <-blavCompare(bfit.9factors, bfit.2factors3)
+
+# Calculate WAIC values for the models.
+get_waic = function(object1) {
+    lavopt1 <- object1@Options
+    lavopt1$estimator <- "ML"
+    ll1 = case_lls(object1@external$mcmcout, object1@Model, 
+        object1@ParTable, object1@SampleStats, lavopt1, object1@Cache, 
+        object1@Data, make_mcmc(object1@external$mcmcout))
+    return(waic(ll1))
+}
+environment(get_waic) <- asNamespace('blavaan')
+waic_1f <- get_waic(bfit.1factor)
+waic_MF2012 <- get_waic(bfit.MF2012)
+waic_3f <- get_waic(bfit.3factors)
+waic_3find <- get_waic(bfit.3factors_ind)
+waic_2f1 <- get_waic(bfit.2factors1)
+waic_2f2 <- get_waic(bfit.2factors2)
+waic_2f3 <- get_waic(bfit.2factors3)
+waic_9f <- get_waic(bfit.9factors)
+
+
+save.image("bcfi_chimps_5k_iterations_centeredSite.RData")
+
+
+```
+## Output table: comparison to 9 factor models
+```{r}
+
+WAIC<-rbind(f9_1f$waic[[2]][3], f9_MF2012$waic[[2]][3], f9_3f$waic[[2]][3], f9_3f_ind$waic[[2]][3], f9_2f1$waic[[2]][3], f9_2f2$waic[[2]][3], f9_2f3$waic[[2]][3])
+
+WAIC_SE<-rbind(f9_1f$waic[[2]][6], f9_MF2012$waic[[2]][6], f9_3f$waic[[2]][6], f9_3f_ind$waic[[2]][6], f9_2f1$waic[[2]][6], f9_2f2$waic[[2]][6], f9_2f3$waic[[2]][6])
+
+WAIC_diff<-rbind(f9_1f$diff_waic[1], f9_MF2012$diff_waic[1], f9_3f$diff_waic[1],  f9_3f_ind$diff_waic[1], f9_2f1$diff_waic[1], f9_2f2$diff_waic[1], f9_2f3$diff_waic[1])
+
+WAIC_diff_SE<-rbind(f9_1f$diff_waic[2], f9_MF2012$diff_waic[2], f9_3f$diff_waic[2],  f9_3f_ind$diff_waic[2], f9_2f1$diff_waic[2], f9_2f2$diff_waic[2], f9_2f3$diff_waic[2])
+
+models <- rbind("1 factor", "MF 2012", "3 factors", "3 independent factors", "2 factors 1", "2 factors 2", "2 factors 3")
+
+calc_p<-function(MEAN, SE){2*(1-pnorm(abs(MEAN/SE)))}
+
+p_diff<-calc_p(MEAN=WAIC_diff, SE=WAIC_diff_SE)
+
+xx<-data.frame("Models"=models, WAIC, "SE" = WAIC_SE, WAIC_diff, WAIC_diff_SE, p_diff)
+
+xx<-xx%>%
+  rename("WAIC difference"= elpd_diff, "SE difference"= se_diff, "p difference"= elpd_diff.1)%>%
+  mutate_at(2:6, round, 2)
+write.csv(xx, file = "CFA_chimps_WAIC_summary.csv")
+
+```
+
+
+
+
+
+```{r}
+plot(bfit.MF2012, pars = 1:12)
+
+plot(bfit.MF2012, pars = 1:4, plot.type = "acf")
+```
+
+
+```{r}
+fm.1factor<-fitMeasures(bfit.1factor)
+fm.MF2012<-fitMeasures(bfit.MF2012)
+fm.3factors<-fitMeasures(bfit.3factors)
+fm.3factors_ind<-fitMeasures(bfit.3factors_ind)
+fm.2factors1<-fitMeasures(bfit.2factors1)
+fm.2factors2<-fitMeasures(bfit.2factors2)
+fm.2factors3<-fitMeasures(bfit.2factors3)
+fm.9factors<-fitMeasures(bfit.9factors)
+
+rbind(fm.1factor, fm.MF2012, fm.3factors, fm.3factors_ind,  fm.2factors1, fm.2factors2, fm.2factors3, fm.9factors)
+save.image("bcfi_chimps_5k_iterations_centeredSite.RData")
+```
+
+## Summary table CFA: model comparisons
+```{r}
+xx<-rbind(fm.1factor, fm.MF2012, fm.3factors, fm.3factors_ind,fm.2factors1, fm.2factors2, fm.2factors3, fm.9factors)
+
+xx<-as.data.frame(xx)
+cfa_model_comparison<-xx%>%
+  add_rownames()%>%
+  rename(Model="rowname")%>%
+  select(Model, waic, se_waic)%>%
+  rename(WAIC="waic", SE="se_waic")%>%
+  mutate(Model=str_replace(Model, "fm.", ""))
+
+```
+
+```{r}
+WAIC<-rbind(f9_1f$waic[[2]][3], f9_MF2012$waic[[2]][3], f9_3f$waic[[2]][3], f9_3f_ind$waic[[2]][3], f9_2f1$waic[[2]][3], f9_2f2$waic[[2]][3], f9_2f3$waic[[2]][3])
+
+WAIC_SE<-rbind(f9_1f$waic[[2]][6], f9_MF2012$waic[[2]][6], f9_3f$waic[[2]][6], f9_3f_ind$waic[[2]][6], f9_2f1$waic[[2]][6], f9_2f2$waic[[2]][6], f9_2f3$waic[[2]][6])
+
+WAIC_diff<-rbind(f9_1f$diff_waic[1], f9_MF2012$diff_waic[1], f9_3f$diff_waic[1],  f9_3f_ind$diff_waic[1], f9_2f1$diff_waic[1], f9_2f2$diff_waic[1], f9_2f3$diff_waic[1])
+
+WAIC_diff_SE<-rbind(f9_1f$diff_waic[2], f9_MF2012$diff_waic[2], f9_3f$diff_waic[2],  f9_3f_ind$diff_waic[2], f9_2f1$diff_waic[2], f9_2f2$diff_waic[2], f9_2f3$diff_waic[2])
+
+models <- rbind("1 factor", "MF 2012", "3 factors", "3 independent factors", "2 factors 1", "2 factors 2", "2 factors 3")
+
+calc_p<-function(MEAN, SE){2*(1-pnorm(abs(MEAN/SE)))}
+
+p_diff<-calc_p(MEAN=WAIC_diff, SE=WAIC_diff_SE)
+
+xx<-data.frame("Models"=models, WAIC, "SE" = WAIC_SE, WAIC_diff, WAIC_diff_SE, p_diff)
+
+xx<-xx%>%
+  rename("WAIC difference"= elpd_diff, "SE difference"= se_diff, "p difference"= elpd_diff.1)%>%
+  mutate_at(2:6, round, 2)
+write.csv(xx, file = "CFA_chimps_WAIC_summary.csv")
+
+```
+
+
+
+# Summaries for all models
+
+## 1 factor
+```{r}
+summary(bfit.1factor, neff=TRUE)
+```
+
+## MF 2012
+```{r}
+summary(bfit.MF2012, neff=TRUE)
+```
+
+
+## 3 factors
+```{r}
+summary(bfit.3factors, neff=TRUE)
+```
+
+
+
+## 3 independent factors
+```{r}
+summary(bfit.3factors_ind)
+```
+
+## 2 factors (WM+Shifting, Inhibition)
+```{r}
+summary(bfit.2factors1)
+```
+
+## 2 factors (WM+Inhibition, Shifting)
+```{r}
+summary(bfit.2factors2)
+```
+
+## 2 factors (Inhibition + Shifting, WM)
+```{r}
+summary(bfit.2factors3)
+```
+
+## 9 factors
+```{r}
+summary(bfit.9factors)
+```
+
+# Take a look at the effective sample sizes by looking at the underlying stan object
+highlights which parameters have a small effective sample size (and how small it is)
+
+## bfit.MF2012
+```{r}
+tmp1 = blavInspect(bfit.MF2012, "mcobj")
+summary(tmp1)
+```
+
+## bfit.3factors
+```{r}
+tmp2 = blavInspect(bfit.3factors, "mcobj")
+summary(tmp2)
+```
+
+## bfit.1factor
+```{r}
+tmp3 = blavInspect(bfit.1factor, "mcobj")
+summary(tmp3)
+```
+
+## bfit.3factors_ind
+```{r}
+tmp4 = blavInspect(bfit.3factors_ind, "mcobj")
+summary(tmp4)
+```
+
+## bfit.2factors1
+```{r}
+tmp4 = blavInspect(bfit.2factors1, "mcobj")
+summary(tmp4)
+```
+
+## bfit.2factors2
+```{r}
+tmp5 = blavInspect(bfit.2factors2, "mcobj")
+summary(tmp5)
+```
+
+## bfit.2factors3
+```{r}
+tmp6 = blavInspect(bfit.2factors3, "mcobj")
+summary(tmp6)
+```
+
+## bfit.9factors
+```{r}
+tmp7 = blavInspect(bfit.9factors, "mcobj")
+summary(tmp7)
+```
+
+
+# Compare models to the 1 factor model
+## MF2012
+```{r}
+blavCompare(bfit.1factor, bfit.MF2012)
+``` 
+
+## 3 factors
+```{r}
+blavCompare(bfit.1factor, bfit.3factors)
+``` 
+
+## 3 independent factors
+```{r}
+blavCompare(bfit.1factor, bfit.3factors_ind)
+``` 
+
+## 2 factors (WM+Shifting, Inhibition)
+```{r}
+blavCompare(bfit.1factor, bfit.2factors1)
+``` 
+
+
+## 2 factors (WM+Inhibition, Shifting)
+```{r}
+blavCompare(bfit.1factor, bfit.2factors2)
+``` 
+
+## 2 factors (Inhibition + Shifting, WM)
+```{r}
+blavCompare(bfit.1factor, bfit.2factors3)
+``` 
+
+
+# Plots
+
+p_value = 2*(1-pnorm(abs(MEAN/SE))) 
+
+We can get the implied variance covariance matrix from a model fit using the "implied" slot. This should be useful for understanding what the covariance between tests is implied by the different models. We could potentially plot this in comparison to Table 2 to see which patterns the model is picking up.
+
+```{r}
+bfit.MF2012@implied
+``` 
+
+```{r}
+bfit.3factors@implied
+``` 
+
+```{r}
+bfit.1factor@implied
+``` 
+
+```{r}
+bfit.3factors_ind@implied
+``` 
+
+```{r}
+bfit.2factors1@implied
+``` 
+
+```{r}
+bfit.2factors2@implied
+``` 
+
+```{r}
+bfit.2factors3@implied
+``` 
+
+## Gelman-Rubin PSRF (potential scale reduction factor) for convergence assessment.
+```{r}
+max(blavInspect(bfit.3factors_ind, what="psrf"))
+max(blavInspect(bfit.MF2012, what="psrf"))
+max(blavInspect(bfit.1factor, what="psrf"))
+max(blavInspect(bfit.3factors, what="psrf"))
+max(blavInspect(bfit.2factors1, what="psrf"))
+max(blavInspect(bfit.2factors2, what="psrf"))
+max(blavInspect(bfit.2factors3, what="psrf"))
+```
+
+
+# Compute variance explained
+It doesn't look like there's an easy function to calculate the variance explained. We can get the values we need to calculate it (on a per-sample basis) from the underlying mcmc object, and then calculate the mean/quantiles across samples. For the one factor model, here's the code to do that. This code returns the median and 95% credible interval for the variance explained for each parameter. The individual parameter name got lost, but they should be in the same order as in the model.
+
+## 1 factor model
+```{r}
+samples = blavInspect(bfit.1factor, "mcmc")
+combined_samples = do.call("rbind", samples)
+
+# Extract the factor loadings, indpendent variances, and the factor variance.
+# These are given by the ly_sign,  Theta_var, and Psi_var respectively 
+ 
+factor_loadings = cbind(1, combined_samples[, 1:8]) # The additional 1 column is for the first column.
+independent_variances = combined_samples[, 9:17]
+factor_variance = combined_samples[,18]
+
+get_variance_explained = function(factor_loading, independent_variance, factor_variance){
+    variance_from_factor = (factor_loading**2)*factor_variance
+
+    total_variance = independent_variance + variance_from_factor # Variation comes from either the factor, or the independent per-test variance
+    return(variance_from_factor/total_variance)
+}
+factor_1_var_explained = get_variance_explained(factor_loadings[,1], independent_variances[,1], factor_variance)
+
+all = sapply(1:9, function(i){get_variance_explained(factor_loadings[,i], independent_variances[,i], factor_variance)})
+apply(X = all, FUN = quantile, MARGIN = 2, probs = seq(0.05, 0.5, 0.95))
+apply(X = all, FUN = quantile, MARGIN = 2, probs = c(0.05, 0.5, 0.95))
+
+#save.image("bcfi_chimps_5k_iterations_centeredSite.RData")
+``` 
+

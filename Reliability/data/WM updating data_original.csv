@@ -1,0 +1,45 @@
+Subject,Site,Sex,Group,Age,Date,Day,Condition,Number_boxes,Trial_number,P1P2_trial_correct,redundant_searches,P1_1st,P2_1st,P1_2nd,P1_2nd_c,P2_2nd,P2_2nd_c,P1_3rd,P1_3rd_c,P2_3rd,P2_3rd_c,P1_4th,P1_4th_c,P2_4th,P2_4th_c,P1_5th,P1_5th_c,P2_5th,P2_5th_c,P1_6th,P1_6th_c,P2_6th,P2_6th_c,P1_7th,P1_7th_c,Comment,number_retr_food,diff_score,P1P2_first4,P1_first4
+Roy,kenya,m,young chimps,11,07/10/2018,2,two_platform:identical_boxes,8,1,0,6,3,3,3,0,3,0,3,0,3,0,4,1,2,1,3,0,3,0,,,,,,,,4,2,4,2
+Roy,kenya,m,young chimps,11,07/10/2018,2,two_platform:identical_boxes,8,2,0,6,5,3,4,1,3,0,4,0,2,1,5,0,3,0,4,0,3,0,,,,,,,,4,2,4,2
+Roy,kenya,m,young chimps,11,07/10/2018,2,two_platform:identical_boxes,8,3,0,6,4,2,5,1,2,1,5,0,4,0,4,0,4,0,3,1,2,0,4,0,,,,,,5,1,4,2
+Roy,kenya,m,young chimps,11,07/10/2018,2,two_platform:identical_boxes,8,4,0,6,4,4,5,1,4,1,5,0,4,0,3,1,2,1,4,0,2,0,3,0,,,,,,6,0,6,3
+Chipie,kenya,f,young chimps,27,09/10/2018,2,two_platform:identical_boxes,8,1,0,6,5,3,5,0,4,1,5,0,4,0,5,0,4,0,5,0,5,1,,,,,,,,4,2,3,1
+Chipie,kenya,f,young chimps,27,09/10/2018,2,two_platform:identical_boxes,8,2,0,6,5,4,5,0,4,0,5,0,3,1,5,0,4,0,5,0,,,,,,,,,,3,3,3,1
+Chipie,kenya,f,young chimps,27,09/10/2018,2,two_platform:identical_boxes,8,3,0,6,5,4,5,0,4,0,5,0,4,0,5,0,5,1,5,0,,,,,,,,,,3,3,3,1
+Chipie,kenya,f,young chimps,27,09/10/2018,2,two_platform:identical_boxes,8,4,0,6,5,5,5,0,5,0,5,0,4,1,5,0,4,0,5,0,,,,,,,,,,3,3,3,1
+Bahati,kenya,f,young chimps,25,07/11/2018,2,two_platform:identical_boxes,8,1,0,3,5,3,3,1,2,1,3,0,4,1,3,0,4,0,2,1,5,1,5,0,,,,,,7,-4,5,2
+Bahati,kenya,f,young chimps,25,07/11/2018,2,two_platform:identical_boxes,8,2,0,6,3,2,3,0,2,0,5,1,5,1,5,0,5,0,4,1,2,0,4,0,,,,,,5,1,4,2
+Bahati,kenya,f,young chimps,25,07/11/2018,2,two_platform:identical_boxes,8,3,0,6,3,3,5,1,4,0,4,1,4,1,4,0,5,0,2,1,5,0,2,0,,,,,,6,0,5,3
+Bahati,kenya,f,young chimps,25,07/11/2018,2,two_platform:identical_boxes,8,4,0,2,2,2,4,1,3,1,2,0,4,1,4,0,5,1,3,1,,,,,,,,,,7,-5,6,2
+Joy,kenya,f,young chimps,14,07/11/2018,2,two_platform:identical_boxes,8,1,0,6,4,3,4,0,3,0,4,0,5,1,5,1,5,0,5,0,5,0,,,,,,,,4,2,4,2
+Joy,kenya,f,young chimps,14,07/11/2018,2,two_platform:identical_boxes,8,2,0,3,3,2,5,1,5,1,2,1,2,0,5,0,5,0,4,1,4,1,,,,,,,,7,-4,5,3
+Joy,kenya,f,young chimps,14,07/11/2018,2,two_platform:identical_boxes,8,3,0,3,4,5,5,1,5,0,3,1,5,0,4,0,2,1,2,1,4,1,,,,,,,,7,-4,5,3
+Joy,kenya,f,young chimps,14,07/11/2018,2,two_platform:identical_boxes,8,4,0,6,4,4,2,1,5,1,2,0,5,0,4,0,4,0,5,1,5,0,5,0,,,,,,5,1,4,2
+Alley,kenya,f,old chimps,31,10/11/2018,2,two_platform:identical_boxes,8,1,0,6,3,3,5,1,3,0,5,0,3,0,5,0,4,1,4,1,4,0,5,0,,,,,,5,1,4,2
+Alley,kenya,f,old chimps,31,10/11/2018,2,two_platform:identical_boxes,8,2,0,1,3,3,5,1,4,1,2,1,5,1,4,1,4,0,,,,,,,,,,,,7,-6,7,4
+Alley,kenya,f,old chimps,31,10/11/2018,2,two_platform:identical_boxes,8,3,0,6,3,4,3,0,3,1,2,1,4,0,5,1,4,0,2,0,4,0,3,0,,,,,,5,1,5,3
+Alley,kenya,f,old chimps,31,10/11/2018,2,two_platform:identical_boxes,8,4,0,6,4,5,3,1,4,1,4,0,4,0,2,1,5,0,2,0,2,1,2,0,3,1,3,0,,7,-1,5,3
+Pasa,uganda,f,Uganda,19,13/10/2019,2,two_platform:identical_boxes,8,1,0,6,3,4,4,1,4,0,3,0,3,1,3,0,3,0,3,0,3,0,,,,,,,,2,4,4,2
+Pasa,uganda,f,Uganda,19,13/10/2019,2,two_platform:identical_boxes,8,2,0,6,4,4,3,1,4,0,3,0,3,1,3,0,4,0,3,0,2,1,3,0,,,,,,3,3,4,2
+Pasa,uganda,f,Uganda,19,13/10/2019,2,two_platform:identical_boxes,8,3,0,6,2,3,3,1,3,0,2,0,1,1,3,0,1,0,1,1,3,0,1,0,,,,,,3,3,4,2
+Pasa,uganda,f,Uganda,19,13/10/2019,2,two_platform:identical_boxes,8,4,0,4,2,2,1,1,3,1,3,1,2,0,1,0,3,0,4,1,3,0,,,,,,,,4,0,5,3
+Mawa,uganda,m,Uganda,23,02/11/2019,2,two_platform:identical_boxes,8,1,0,6,1,3,3,1,3,0,2,1,2,1,3,0,3,0,3,0,1,1,3,0,3,0,,,,4,2,5,3
+Mawa,uganda,m,Uganda,23,02/11/2019,2,two_platform:identical_boxes,8,2,0,6,3,4,3,0,3,1,3,0,3,0,1,1,2,1,2,1,2,0,2,0,3,0,,,,4,2,5,2
+Mawa,uganda,m,Uganda,23,02/11/2019,2,two_platform:identical_boxes,8,3,0,6,3,3,3,0,1,1,3,0,1,0,3,0,2,1,3,0,4,1,3,0,,,,,,3,3,4,1
+Mawa,uganda,m,Uganda,23,02/11/2019,2,two_platform:identical_boxes,8,4,0,6,3,4,3,0,3,1,2,1,3,0,3,0,4,0,2,0,2,1,2,0,,,,,,3,3,4,2
+Becky,uganda,f,Uganda,28,05/11/2019,2,two_platform:identical_boxes,8,1,0,6,2,3,3,1,4,1,3,0,3,0,3,0,3,0,3,0,4,0,,,,,,,,2,4,4,2
+Becky,uganda,f,Uganda,28,05/11/2019,2,two_platform:identical_boxes,8,2,0,2,4,3,3,1,3,0,1,1,3,0,2,1,,,,,,,,,,,,,,3,-1,5,4
+Becky,uganda,f,Uganda,28,05/11/2019,2,two_platform:identical_boxes,8,3,0,6,3,2,3,0,1,1,3,0,4,1,3,0,1,0,3,0,4,0,,,,,,,,2,4,4,1
+Becky,uganda,f,Uganda,28,05/11/2019,2,two_platform:identical_boxes,8,4,0,6,3,3,3,0,3,0,3,0,4,1,4,1,3,0,4,0,4,0,,,,,,,,2,4,4,2
+Kalema,uganda,m,Uganda,23,05/11/2019,2,two_platform:identical_boxes,8,1,0,6,3,4,2,1,2,1,3,0,2,0,2,0,2,0,4,1,4,0,4,0,,,,,,3,3,4,2
+Kalema,uganda,m,Uganda,23,05/11/2019,2,two_platform:identical_boxes,8,2,0,6,4,4,2,1,4,0,4,0,4,0,3,1,2,1,4,0,2,0,3,0,,,,,,3,3,5,3
+Kalema,uganda,m,Uganda,23,05/11/2019,2,two_platform:identical_boxes,8,3,0,6,4,2,3,1,4,1,4,0,2,0,4,0,4,0,2,1,2,0,3,0,,,,,,3,3,4,2
+Kalema,uganda,m,Uganda,23,05/11/2019,2,two_platform:identical_boxes,8,4,0,6,3,4,4,1,4,0,4,0,2,1,4,0,4,0,4,0,2,0,,,,,,,,2,4,4,2
+Indi,uganda,m,Uganda,19,15/10/2019,2,two_platform:identical_boxes,8,1,0,3,4,4,1,1,1,1,3,1,3,1,1,0,4,0,2,1,3,0,,,,,,,,5,-2,6,3
+Indi,uganda,m,Uganda,19,15/10/2019,2,two_platform:identical_boxes,8,2,0,6,1,2,4,1,2,0,3,1,3,1,1,0,3,0,3,0,4,1,3,0,1,1,1,0,,5,1,5,3
+Indi,uganda,m,Uganda,19,15/10/2019,2,two_platform:identical_boxes,8,3,0,6,1,4,4,1,1,1,1,0,3,1,3,1,4,0,1,0,1,0,3,0,4,0,,,,4,2,6,3
+Indi,uganda,m,Uganda,19,15/10/2019,2,two_platform:identical_boxes,8,4,0,2,3,4,2,1,3,1,4,1,3,0,1,1,3,0,,,,,,,,,,,,4,-2,6,4
+Zee,kenya,m,old chimps,18,13/10/2018,2,two_platform:identical_boxes,8,1,0,6,4,5,4,0,5,0,5,1,2,1,4,0,5,0,5,0,5,0,,,,,,,,4,2,4,2
+Zee,kenya,m,old chimps,18,13/10/2018,2,two_platform:identical_boxes,8,2,0,6,5,5,5,0,5,0,5,0,2,1,5,0,5,0,4,1,5,0,,,,,,,,4,2,3,1
+Zee,kenya,m,old chimps,18,13/10/2018,2,two_platform:identical_boxes,8,3,0,6,5,3,4,1,5,1,5,0,5,0,4,0,5,0,4,0,5,0,,,,,,,,4,2,4,2
+Zee,kenya,m,old chimps,18,13/10/2018,2,two_platform:identical_boxes,8,4,0,6,5,5,5,0,5,0,4,1,5,0,3,1,5,0,5,0,3,1,4,0,,,,,,5,1,4,3

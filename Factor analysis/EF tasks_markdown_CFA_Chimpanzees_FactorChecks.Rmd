@@ -1,0 +1,175 @@
+---
+title: "CFA_Chimpanzees_FactorChecks"
+author: "Christoph Völter"
+date: "30/10/2020"
+output: word_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+rm(list=ls())
+library(tidyverse)
+library(sjPlot)
+library(psych)
+library(summarytools)
+library(blavaan)
+library(car)
+#load("./CFA_Blavaan_ModelChecks.RData")
+```
+
+```{r}
+#LOAD DATA
+CFA <-read.csv("EFTB_CFA_data_chimpanzees.csv",header=TRUE, sep = ",")
+```
+
+
+# Entire sample, including children with missing values
+```{r}
+fit_model = function(model) {
+    fit = bcfa(model, data = CFA, orthogonal=TRUE, adapt = 500, burnin = 2500, sample = 5000, n.chains = 4, control=list(adapt_delta=0.95), bcontrol=list(cores=4))
+    return(fit)
+}
+
+
+model.WM <- 'F1 =~  WMBoxes + WMGrid + WMUpdating'
+model.WM.null <- 'F1 =~  WMBoxes 
+                  F2 =~  WMGrid
+                  F3 =~  WMUpdating'
+
+model.Inhibition <- 'F1 =~  GlassCeiling +  Cylinder + InhibGrid' 
+model.Inhibition.null <- 'F1 =~  GlassCeiling
+                          F2 =~ Cylinder
+                          F3 =~ InhibGrid'                 
+
+
+model.Shifting <- 'F1 =~  CD_all + Shelf + Tray'
+model.Shifting.null <- 'F1 =~ CD_all
+                  F2 =~ Shelf
+                  F3 =~ Tray'
+
+
+
+# Fit each of the models
+bfit.model.WM = fit_model(model.WM)
+bfit.model.WM.null = fit_model(model.WM.null)
+bfit.model.Inhibition = fit_model(model.Inhibition)
+bfit.model.Inhibition.null = fit_model(model.Inhibition.null)
+bfit.model.Shifting = fit_model(model.Shifting)
+bfit.model.Shifting.null = fit_model(model.Shifting.null)
+```  
+
+
+```{r}
+save.image("./CFA_Blavaan_ModelChecks.RData")
+```
+
+# Compare models
+## WM
+```{r}
+wm_blavCompare <- blavCompare(bfit.model.WM.null, bfit.model.WM)
+``` 
+
+## Inhibition
+```{r}
+inh_blavCompare <- blavCompare(bfit.model.Inhibition.null, bfit.model.Inhibition)
+```
+
+## Shifting
+```{r}
+shifting_blavCompare <- blavCompare(bfit.model.Shifting.null, bfit.model.Shifting)
+```
+
+# Calculate WAIC values for the models
+```{r}
+get_waic = function(object1) {
+    lavopt1 <- object1@Options
+    lavopt1$estimator <- "ML"
+    ll1 = case_lls(object1@external$mcmcout, object1@Model, 
+        object1@ParTable, object1@SampleStats, lavopt1, object1@Cache, 
+        object1@Data, make_mcmc(object1@external$mcmcout))
+    return(waic(ll1))
+}
+environment(get_waic) <- asNamespace('blavaan')
+get_waic_wm<-get_waic(bfit.model.WM)
+get_waic_wm_null<-get_waic(bfit.model.WM.null)
+get_waic_inh<-get_waic(bfit.model.Inhibition)
+get_waic_inh_null<-get_waic(bfit.model.Inhibition.null)
+get_waic_shifting<-get_waic(bfit.model.Shifting)
+get_waic_shifting_null<-get_waic(bfit.model.Shifting.null)
+``` 
+
+# Get fit measures
+```{r}
+fm.WM<-fitMeasures(bfit.model.WM)
+fm.WM.null<-fitMeasures(bfit.model.WM.null)
+fm.Inhibition<-fitMeasures(bfit.model.Inhibition)
+fm.Inhibition.null<-fitMeasures(bfit.model.Inhibition.null)
+fm.Shifting<-fitMeasures(bfit.model.Shifting)
+fm.Shifting.null<-fitMeasures(bfit.model.Shifting.null)
+``` 
+
+# Put fit measures into a table
+```{r}
+rbind(fm.WM, fm.WM.null, fm.Inhibition,  fm.Inhibition.null, fm.Shifting, fm.Shifting.null)
+```
+## Output table: comparison to 9 factor models
+```{r}
+
+WAIC<-rbind(wm_blavCompare$waic[[2]][3], inh_blavCompare$waic[[2]][3], shifting_blavCompare$waic[[2]][3])
+
+WAIC_SE<-rbind(wm_blavCompare$waic[[2]][6], inh_blavCompare$waic[[2]][6], shifting_blavCompare$waic[[2]][6])
+
+
+WAIC_diff<-rbind(wm_blavCompare$diff_waic[1], inh_blavCompare$diff_waic[1], shifting_blavCompare$diff_waic[1])
+
+WAIC_diff_SE<-rbind(wm_blavCompare$diff_waic[2], inh_blavCompare$diff_waic[2], shifting_blavCompare$diff_waic[2])
+
+models <- rbind("WM model", "Inhibition model", "Shifting model")
+
+calc_p<-function(MEAN, SE){2*(1-pnorm(abs(MEAN/SE)))}
+
+p_diff<-calc_p(MEAN=WAIC_diff, SE=WAIC_diff_SE)
+
+xx<-data.frame("Models"=models, WAIC, "SE" = WAIC_SE, WAIC_diff, WAIC_diff_SE, p_diff)
+
+xx<-xx%>%
+  rename("WAIC difference"= elpd_diff, "SE difference"= se_diff, "p difference"= elpd_diff.1)%>%
+  mutate_at(2:6, round, 2)
+write.csv(xx, file = "CFA_chimps_factor_checks_WAIC_summary.csv")
+
+```
+
+
+# Summaries for all models
+## WM
+```{r}
+summary(bfit.model.WM, neff=TRUE)
+```
+
+## WM null
+```{r}
+summary(bfit.model.WM.null, neff=TRUE)
+```
+
+## Inhibition
+```{r}
+summary(bfit.model.Inhibition, neff=TRUE)
+```
+
+## Inhibition.null
+```{r}
+summary(bfit.model.Inhibition.null, neff=TRUE)
+```
+
+## Shifting
+```{r}
+summary(bfit.model.Shifting, neff=TRUE)
+```
+
+## Shifting null
+```{r}
+summary(bfit.model.Shifting.null, neff=TRUE)
+```
+```{r}
+save.image("./CFA_Blavaan_ModelChecks.RData")
+```

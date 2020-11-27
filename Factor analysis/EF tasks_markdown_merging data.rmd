@@ -1,0 +1,399 @@
+---
+title: "EF tasks markdown 2020"
+author: "Christoph Voelter"
+date: "January 26, 2020"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+rm(list=ls())
+library(lme4)
+library(readr)
+library(tidyverse)
+library(sjPlot)
+library(ggthemes)
+library(gridExtra)
+library(ggpubr)
+library(corrr)
+library(reshape2)
+library(psych)
+library(summarytools)
+library(lavaan)
+library(blavaan)
+library(MVN)
+library(car)
+library(lavaanPlot)
+
+```
+
+### Selection of task DVs
+* All DVs have been scaled to values between 0 and 1 with higher values indicating better performance.
+* Inhibition tasks: proportion correct in *first session*. 
+First session performance shows signature of prepotent response. Increase of side biases in the second session of the inhibition boxes task.  Previous findings with the WKPRC chimpanzees showed performance improvements in the inhibition cylinder task within the first session. Comparability to children who completed only one session. 
+* Shifting tasks: Shifting Boxes: Proportion correct in the CD phase (as measure of susceptibility to interference from anonther stimulus dimension); Shifting Shelf task:  proportion of platform switches; Shifting Trays task: proportion correct in session 2. DVs were selected that show large individual variation and above chance performance (in contrast to the ED phase in the Shifting Boxes task and the first session in the Shifting Tray task).
+* Working memory: WM Boxes and WM Updating (both platforms): proportion of correct choices; WM Grid: proximity of first choice to the baited compartment (ranging between 0 and 1). DVs capture the test performance (in the presence of a secondary task).
+
+
+
+```{r loading data, include = FALSE}
+WM.data <- read.csv(file="WM_task_individual_corr2020.csv")
+Inh.data <- read.csv(file="Inh_task_individual_corr2020.csv")
+Shifting.data <- read.csv(file="Shifting_task_individual_corr2020.csv")
+demo.data<-read.csv(file="chimp_demographics.csv")
+```
+
+### Select Working Memory DVs
+```{r include=FALSE}
+
+WM.data<-WM.data %>%
+  select(Subject, Updating_P1P2.correct, boxes_correct_newrange, Grid_Distance_newrange )
+
+summary(WM.data)
+```
+
+
+### Select Shifting DVs
+```{r include=FALSE}
+str(Shifting.data )
+
+Shifting.data<-Shifting.data  %>%
+  select(-proportion_switching_mistakes, ID, SD)
+
+summary(Shifting.data)
+```
+
+
+### Select Inhibition DVs
+```{r include=FALSE}
+str(Inh.data)
+
+Inh.data<-Inh.data  %>%
+  select(Subject, Inh.grid.correct1  , Inh.cylinders.correct1, Inh.boxes.correct1  )
+
+summary(Inh.data)
+```
+
+
+## Summary
+  
+
+
+```{r preparing data for correlation, include=FALSE}
+
+#Join DVs together
+EF_task_data <- WM.data  %>% 
+  full_join(Inh.data)%>%
+  full_join(Shifting.data)%>%
+  filter(Subject!="George", Subject!="Saidia")
+  
+sum(complete.cases(EF_task_data))
+
+na_df <- EF_task_data[rowSums(is.na(EF_task_data)) > 0,]
+
+view(dfSummary(EF_task_data))
+
+```
+Missing values:
+Total number of individuals: 53 (two subjects excluded)
+Complete cases: 48 completed all 9 tasks
+Incomplete cases: 
+* George completed 1 task (inhibition grid) --> exclude
+* Saidia completed 2 tasks (inhibition grid and inhibition cylinder) --> exclude
+* Edvard completed 7 tasks (all except inhibition grid and inhibition cylinder). Edvard did not eat peanuts and therefore did not engage in the inhibition cylinder task,
+* Jane completed 8 tasks (all except inhibition cylinder). Jane found a  transprent closed cylidners before the first session due to remaining cylinders in one of the enclosures
+* Julia completed 8 tasks (all except shifting shelf). Julia did not finish training 2 (not motivated)
+* Mwanzo completed 8 tasks (all except shifting shelf). Mwanzo failed Training 1 within 72 trials. * Safari completed 7  tasks (all except shifting shelf and shifting tray). Safari refused to participate in more than a few trials per day. He completed 11 trials in the shifting tray task within 4 days. Safari did not finish training 1 in the shifting shelf task.
+(* Tess completed all 9  tasks but did not receive the simple reversal task due to an experimenter mistake)
+* Mawa completed all tasks but his second inhibition cylinder session cannot be counted.
+
+
+
+
+
+
+***  
+
+## Plotting correlations
+```{r include=FALSE}
+d <- correlate(EF_task_data [-1], method="pearson")
+d
+```
+
+```{r include=FALSE}
+#jpeg(file="WM_corrplot.jpeg", width=3800, height=1000, res=300)
+#pdf(file="WM_corrplot.pdf", width=10, height=4)
+d %>%
+  shave(upper = TRUE) %>%
+  rplot(print_cor = TRUE, colors = c("red", "green"), shape = 16) 
+
+d
+#dev.off()
+```
+
+```{r echo=FALSE}
+# Get upper triangle of the correlation matrix
+  get_upper_tri <- function(cormat){
+    cormat[lower.tri(cormat)]<- NA
+    return(cormat)
+  }
+
+cormat <- round(cor(EF_task_data[-1], method="pearson", use = "pairwise.complete.obs"),2)
+upper_tri <- get_upper_tri(cormat)
+melted_cormat=melt(cormat, na.rm = TRUE)
+ggplot(data = melted_cormat, aes(x=Var1, y=Var2, fill=value)) + 
+  geom_tile()+
+  geom_text(aes(Var2, Var1, label = value), color = "black", size = 2) +
+ scale_fill_gradient2(low = "blue", high = "red", 
+   midpoint = 0, limit = c(-1,1), space = "Lab", 
+   name=" Pearson Correlation") +
+  theme_minimal()+ 
+ theme(axis.text.x = element_text(angle = 45, vjust = 1, 
+    size = 8, hjust = 1))+
+  labs(x="",y="")+
+ coord_fixed()
+
+```
+
+
+```{r echo=FALSE, warning=FALSE}
+
+EF_task_data2<-EF_task_data%>%
+  select(-Subject)%>%
+  rename("WM Updating"="Updating_P1P2.correct",
+         "WM Boxes"="boxes_correct_newrange",
+         "WM Grid"="Grid_Distance_newrange",
+         "Inhibition Cylinder" = "Inh.cylinders.correct1",
+         "Inhibition Grid"="Inh.grid.correct1",
+         "Inhibition Boxes"="Inh.boxes.correct1",
+         "Shifting Tray"="Shifting.tray.correct.S2",
+         "Shifting Shelf"="proportion_switches",
+         "Shifting Boxes (CD)"="CD",
+         "Shifting Boxes (SD)"="SD",
+         "Shifting Boxes (SR)"="SR",
+         "Shifting Boxes (ID)"="ID",
+         "Shifting Boxes (ED)"="ED")%>%
+  droplevels()
+
+library(ggcorrplot)
+corr <- cor(EF_task_data2, use = "pairwise.complete.obs")
+p.mat <- cor_pmat(EF_task_data2, use = "pairwise.complete.obs")
+cormat.all.tasks<- ggcorrplot(corr, hc.order = TRUE,
+  sig.level = 0.05,
+  type = "lower",
+  p.mat = p.mat,
+  insig = c("pch"), pch = 4, pch.col = "darkgrey",
+  pch.cex = 5,
+  lab = TRUE,
+  digits = 2
+) +
+  scale_fill_gradient2(
+    low = "dodgerblue", high = "darkorange",
+    midpoint = 0, limit = c(-1, 1)
+  ) +
+  guides(fill = F) +
+  theme_few(base_size = 12) +
+  theme(
+    axis.text.x = element_text(angle = 90, vjust = 0, hjust = 1),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    plot.margin = unit(c(9, 1, 0, 0), "mm")
+  )
+
+ggsave(cormat.all.tasks, filename="graphics/cormat_all_tasks.png", width=10, height=10, scale=0.65)
+
+
+```
+
+
+### Assumptions
+```{r}
+library(plyr)
+library(psych)
+multi.hist(EF_task_data[-1])
+
+``` 
+
+
+```{r}
+# Nested model 
+model.MF2012 <- 'F1_WM =~  Updating_P1P2.correct   + boxes_correct_newrange + Grid_Distance_newrange
+                F2_Shifting =~  CD + proportion_switches + Shifting.tray.correct.S2
+                F3_CommonEF =~  Inh.grid.correct1 + Inh.cylinders.correct1 + Inh.boxes.correct1 + proportion_switches + CD + Shifting.tray.correct.S2 + Updating_P1P2.correct+ boxes_correct_newrange + Grid_Distance_newrange'
+
+fit.MF2012 <- cfa(model.MF2012, data = EF_task_data,  orthogonal=TRUE, estimator="ML", missing="fiml", optim.method="nlminb")#, std.lv=TRUE)
+
+#lavaan WARNING: some estimated lv variances are negative
+
+summary(fit.MF2012, fit.measures = TRUE)
+parameterEstimates(fit.MF2012)  
+# 
+#parameterEstimates(fit.MF2012)%>% 
+#   filter(op == "=~") %>% 
+#   select('Latent Factor'=lhs, Indicator=rhs, B=est, SE=se, Z=z, 'p-value'=pvalue)#, Beta=std.all)
+# 
+# resid(fit.MF2012, type = "cor")
+
+
+  
+model.3factors <- 'F1_WM =~  Updating_P1P2.correct + boxes_correct_newrange + Grid_Distance_newrange
+                F2_Shifting =~  CD + proportion_switches + Shifting.tray.correct.S2
+                  F3_Inhibition =~  Inh.grid.correct1 + Inh.cylinders.correct1 + Inh.boxes.correct1'
+fit.3factors <- cfa(model.3factors, data = EF_task_data, orthogonal=FALSE, estimator="ML", missing="fiml", optim.method="nlminb")#std.lv=TRUE)
+#lavaan WARNING: the optimizer (NLMINB) claimed the model converged,but not all elements of the gradient are (near) zero; the optimizer may not have found a local solution use check.gradient = FALSE to skip this check.
+summary(fit.3factors, fit.measures = TRUE)
+
+
+# 1 factor
+model.1factor <- 'F1_CommonEF =~  Inh.grid.correct1 + Inh.cylinders.correct1 + Inh.boxes.correct1 + proportion_switches + CD + Shifting.tray.correct.S2 + Updating_P1P2.correct+ boxes_correct_newrange + Grid_Distance_newrange'
+fit.1factor <- cfa(model.1factor, data = EF_task_data,  orthogonal=TRUE, estimator="ML", missing="fiml", optim.method="nlminb")#, std.lv=TRUE)
+summary(fit.1factor, fit.measures = TRUE)
+#Fit indices
+#CFI (Comparative fit index): Measures whether the model fits the data better than a more restricted baseline model. Higher is better, with okay fit > .9.
+#TLI (Tucker-Lewis index): Similar to CFI, but it penalizes overly complex models (making it more conservative than CFI). Measures whether the model fits the data better than a more restricted baseline model. Higher is better, with okay fit > .9.
+  #Comparative Fit Index (CFI)                    0.396
+  #Tucker-Lewis Index (TLI)                       0.194
+
+#RMSEA (Root mean square error of approximation): The “error of approximation” refers to residuals. Instead of comparing to a baseline model, it measures how closely the model reproduces data patterns (i.e. the covariances among indicators). Lower is better. It comes with a 90%CI in lavaan and other major SEM software, so that’s often reported along with it.
+#  RMSEA                                          0.109
+
+# 3 independent factors
+model.3factors_ind <- 'F1_WM =~  Updating_P1P2.correct + boxes_correct_newrange + Grid_Distance_newrange
+                F2_Shifting =~  CD + proportion_switches + Shifting.tray.correct.S2
+                  F3_Inhibition =~  Inh.grid.correct1 + Inh.cylinders.correct1 + Inh.boxes.correct1'
+
+fit.3factors_ind <- cfa(model.3factors_ind, data = EF_task_data, , orthogonal=TRUE, estimator="ML", missing="fiml", optim.method="nlminb")#std.lv=TRUE)
+#lavaan WARNING: some estimated lv variances are negative
+summary(fit.3factors_ind, fit.measures = TRUE)
+
+anova(fit.3factors_ind , fit.1factor)
+
+```
+
+```{r}
+# WM=Shifting
+model.2factors1 <- 'F1_2_WM_Shifting =~  Updating_P1P2.correct + boxes_correct_newrange + Grid_Distance_newrange+ CD + proportion_switches + Shifting.tray.correct.S2
+                   F3_Inhibition =~  Inh.grid.correct1 + Inh.cylinders.correct1 + Inh.boxes.correct1'
+fit.2factors1  <- cfa(model.2factors1 , data = EF_task_data, missing="fiml",orthogonal=TRUE, estimator="ML", missing="fiml", optim.method="nlminb")#, std.lv=TRUE)
+
+summary(fit.2factors1, fit.measures = TRUE)
+anova(fit.2factors1 , fit.1factor)
+# WM=Inhibition
+model.2factors2 <- 'F1_3_WM_Inh =~  Updating_P1P2.correct + boxes_correct_newrange + Grid_Distance_newrange + Inh.grid.correct1 + Inh.cylinders.correct1 + Inh.boxes.correct1
+                    F2_Shifting =~  CD + proportion_switches + Shifting.tray.correct.S2'
+fit.2factors2  <- cfa(model.2factors2 , data = EF_task_data, missing="fiml",orthogonal=TRUE, estimator="ML", missing="fiml", optim.method="nlminb")#, std.lv=TRUE)
+summary(fit.2factors2, fit.measures = TRUE)
+
+anova(fit.2factors2 , fit.1factor)
+
+# Shifting=Inhibition
+model.2factors3 <- 'F1_WM =~  Updating_P1P2.correct + boxes_correct_newrange + Grid_Distance_newrange
+                    F2_3_Shifting_Inh=~ CD + proportion_switches + Shifting.tray.correct.S2 + Inh.grid.correct1 + Inh.cylinders.correct1 + Inh.boxes.correct1'
+fit.2factors3  <- cfa(model.2factors3 , data = EF_task_data, missing="fiml",orthogonal=FALSE, estimator="ML", missing="fiml", optim.method="nlminb")# std.lv=TRUE)
+summary(fit.2factors3, fit.measures = TRUE)
+```
+
+```{r}
+anova(fit.1factor, fit.MF2012)
+```
+
+```{r fig.height=4}
+lavaanPlot(model = fit.3factors_ind, node_options = list(shape = "box", fontname = "Helvetica"), edge_options = list(color = "grey"), coefs = TRUE,  stars=TRUE)
+```
+
+```{r fig.height=4}
+lavaanPlot(model = fit.2factors1, node_options = list(shape = "box", fontname = "Helvetica"), edge_options = list(color = "grey"), coefs = TRUE,  stars=TRUE)
+```
+
+```{r}
+lavaanPlot(model = fit.MF2012, node_options = list(shape = "box", fontname = "Helvetica"), edge_options = list(color = "grey"), coefs = TRUE)
+```
+
+
+
+```{r}
+# Nested model 
+model.MF2012 <- 'F1_WM =~  Updating_P1P2.correct   + boxes_correct_newrange + Grid_Distance_newrange
+                F2_Shifting =~  CD + proportion_switches + Shifting.tray.correct.S2
+                F3_CommonEF =~  Inh.grid.correct1 + Inh.cylinders.correct1 + Inh.boxes.correct1 + proportion_switches + CD + Shifting.tray.correct.S2 + Updating_P1P2.correct+ boxes_correct_newrange + Grid_Distance_newrange'
+
+fit.MF2012 <- bcfa(model.MF2012, data = EF_task_data,  orthogonal=TRUE, burnin=2000, adapt=2000)
+```
+
+
+```{r echo=FALSE}
+knitr::knit_exit()
+```
+
+```{r include=FALSE}
+EF_task_data<-EF_task_data%>%
+  inner_join(demo.data)
+write.csv(EF_task_data , file = "EF_task_individual_corr.csv", row.names=FALSE)
+```
+
+```{r}
+
+EF_task_data <- read.csv(file="EF_task_individual_corr.csv")%>%
+  rename(WMUpdating="Updating_P1P2.correct",
+         WMBoxes="boxes_correct_newrange",
+         WMGrid="Grid_Distance_newrange",
+         InhibGrid="Inh.grid.correct1",
+         Cylinder="Inh.cylinders.correct1",
+         GlassCeiling="Inh.boxes.correct1",
+         Tray="Shifting.tray.correct.S2",
+         Shelf="proportion_switches",
+         CD_all="CD")
+
+library(psych)
+efa.data<-EF_task_data%>%
+  select(-Subject,  -ED, -SD,-SR,-ID, -site, -Group, -Sex, -Age)%>%
+  drop_na
+  
+fit <- factanal(efa.data,3, rotation="varimax")
+print(fit, digits=2, cutoff=.2, sort=TRUE)
+
+fa.diagram(fit$loadings, digits=2,cut=.3, simple=FALSE,  adj = 3)
+
+```
+
+```{r}
+# Determine Number of Factors to Extract
+library(nFactors)
+ev <- eigen(cor(efa.data)) # get eigenvalues
+ap <- parallel(subject=nrow(efa.data),var=ncol(efa.data),
+  rep=1000,cent=.1)
+nS <- nScree(x=ev$values, aparallel=ap$eigen$qevpea)
+plotnScree(nS) 
+```
+
+```{r}
+
+
+pc.data<-EF_task_data%>%
+  select(-Subject,  -ED,-ID,-SR, -site, -Group, -Sex, -Age)%>%
+  drop_na
+
+pc.data[,-(1)] = scale(pc.data[,-(1)])
+
+
+fit <- princomp(pc.data, cor=TRUE)
+summary(fit) # print variance accounted for
+loadings(fit) # pc loadings
+plot(fit,type="lines") # scree plot
+fit$scores # the principal components
+biplot(fit) 
+```
+
+```{r}
+fit <- principal(pc.data, nfactors=3, rotate="varimax")
+summary(fit) # print variance accounted for
+fit # print results 
+biplot(fit) 
+
+KMO(pc.data)
+cortest.bartlett(pc.data)
+```
+

@@ -1,0 +1,1381 @@
+Subject,Site,Sex,Group,Age,Date,Day,Session,Condition,trial_number,Side,baited_distractor,chose_side,correct,Comment,side_changes,material_changes,chosen_distractor,SessionED,ForReliability
+Ajabu,kenya,f,old chimps,10,24/11/2018,10,4,ID,1,l,B4,l,1,did not approach platform within 5 min after this trial,,,,,1
+Ajabu,kenya,f,old chimps,10,25/11/2018,10,5,ID,2,l,B3,l,1,,no,yes,,,1
+Ajabu,kenya,f,old chimps,10,25/11/2018,10,5,ID,3,r,B4,r,1,,yes,yes,,,1
+Ajabu,kenya,f,old chimps,10,25/11/2018,10,5,ID,4,r,B3,r,1,,no,yes,,,1
+Ajabu,kenya,f,old chimps,10,25/11/2018,10,5,ID,5,l,B4,l,1,,yes,yes,,,1
+Ajabu,kenya,f,old chimps,10,25/11/2018,10,5,ID,6,r,B4,r,1,,yes,no,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,1,l,,l,1,,,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,2,r,,r,1,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,3,l,,r,0,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,4,r,,l,0,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,5,l,,r,0,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,6,r,,l,0,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,7,l,,l,1,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,8,r,,l,0,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,9,l,,r,0,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,10,r,,r,1,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,11,l,,r,0,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,12,r,,r,1,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,13,r,,r,1,,no,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,14,l,,r,0,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,15,l,,r,0,,no,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,16,r,,r,1,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,17,r,,l,0,,no,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,18,l,,r,0,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,19,r,,l,0,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,20,l,,l,1,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,21,r,,r,1,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,22,l,,r,0,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,23,r,,r,1,,yes,,,,1
+Akela,kenya,f,young chimps,30,23-Nov-18,,8,EDSD,24,l,,r,0,,yes,,,,1
+Alikaka,kenya,m,old chimps,20,22/10/2018,,2,CD,1,l,B2,r,0,,,,,,1
+Alikaka,kenya,m,old chimps,20,22/10/2018,,2,CD,2,r,B1,l,0,,yes,yes,,,1
+Alikaka,kenya,m,old chimps,20,22/10/2018,,2,CD,3,l,B1,l,1,,yes,no,,,1
+Alikaka,kenya,m,old chimps,20,22/10/2018,,2,CD,4,r,B2,l,0,,yes,yes,,,1
+Alikaka,kenya,m,old chimps,20,22/10/2018,,2,CD,5,l,B1,r,0,,yes,yes,,,1
+Alikaka,kenya,m,old chimps,20,22/10/2018,,2,CD,6,l,B2,l,1,,no,yes,,,1
+Alikaka,kenya,m,old chimps,20,22/10/2018,,2,CD,7,r,B2,l,0,,yes,no,,,1
+Alikaka,kenya,m,old chimps,20,22/10/2018,,2,CD,8,r,B1,r,1,,no,yes,,,1
+Alikaka,kenya,m,old chimps,20,22/10/2018,,2,CD,9,l,B1,l,1,,yes,no,,,1
+Alikaka,kenya,m,old chimps,20,22/10/2018,,2,CD,10,r,B2,r,1,,yes,yes,,,1
+Alikaka,kenya,m,old chimps,20,22/10/2018,,2,CD,11,l,B2,l,1,,yes,no,,,1
+Alikaka,kenya,m,old chimps,20,22/10/2018,,2,CD,12,r,B1,r,1,,yes,yes,,,1
+Alikaka,kenya,m,old chimps,20,22/10/2018,,2,CD,13,r,B1,r,1,,no,no,,,1
+Amahirwe,kenya,m,old chimps,20,22/10/2018,,3,CD,1,l,B2,r,0,,,,,,1
+Amahirwe,kenya,m,old chimps,20,22/10/2018,,3,CD,2,r,B1,l,0,,yes,yes,,,1
+Amahirwe,kenya,m,old chimps,20,22/10/2018,,3,CD,3,l,B1,r,0,,yes,no,,,1
+Amahirwe,kenya,m,old chimps,20,22/10/2018,,3,CD,4,r,B2,r,1,,yes,yes,,,1
+Amahirwe,kenya,m,old chimps,20,22/10/2018,,3,CD,5,l,B1,l,1,,yes,yes,,,1
+Amahirwe,kenya,m,old chimps,20,22/10/2018,,3,CD,6,l,B2,l,1,,no,yes,,,1
+Amahirwe,kenya,m,old chimps,20,22/10/2018,,3,CD,7,r,B2,r,1,,yes,no,,,1
+Amahirwe,kenya,m,old chimps,20,22/10/2018,,3,CD,8,r,B1,r,1,,no,yes,,,1
+Amahirwe,kenya,m,old chimps,20,22/10/2018,,3,CD,9,l,B1,l,1,,yes,no,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SD,1,r,,l,0,,,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SD,2,l,,l,1,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SD,3,l,,l,1,,no,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SD,4,r,,l,0,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SD,5,l,,r,0,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SD,6,r,,r,1,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SD,7,l,,r,0,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SD,8,r,,r,1,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SD,9,l,,l,1,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SD,10,r,,r,1,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SD,11,r,,r,1,,no,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SD,12,l,,r,0,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SD,13,l,,l,1,,no,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SD,14,r,,r,1,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SD,15,r,,r,1,,no,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SD,16,l,,l,1,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SD,17,r,,r,1,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SD,18,l,,l,1,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SR,1,r,,l,0,,,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SR,2,l,,r,0,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SR,3,l,,r,0,,no,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SR,4,r,,l,0,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SR,5,r,,l,0,,no,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SR,6,l,,r,0,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SR,7,r,,l,0,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SR,8,l,,r,0,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SR,9,l,,r,0,,no,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SR,10,r,,r,1,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SR,11,l,,l,1,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SR,12,r,,r,1,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SR,13,l,,r,0,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SR,14,r,,r,1,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SR,15,l,,r,0,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SR,16,r,,r,1,,yes,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SR,17,r,,l,0,,no,,,,1
+Angela,kenya,f,old chimps,7,21/11/2018,8,1,SR,18,l,,r,0,,yes,,,,1
+Angela,kenya,f,old chimps,7,22/11/2018,8,2,SR,19,l,,r,0,,no,,,,1
+Angela,kenya,f,old chimps,7,22/11/2018,8,2,SR,20,r,,r,1,,yes,,,,1
+Angela,kenya,f,old chimps,7,22/11/2018,8,2,SR,21,r,,r,1,,no,,,,1
+Angela,kenya,f,old chimps,7,22/11/2018,8,2,SR,22,l,,r,0,,yes,,,,1
+Angela,kenya,f,old chimps,7,22/11/2018,8,2,SR,23,r,,r,1,,yes,,,,1
+Angela,kenya,f,old chimps,7,22/11/2018,8,2,SR,24,l,,r,0,,yes,,,,1
+Bahati,kenya,f,young chimps,25,18/11/2018,,3,ID,1,l, B4,r,0,,,,,,1
+Bahati,kenya,f,young chimps,25,18/11/2018,,3,ID,2,l, B3,l,1,,no,yes,,,1
+Bahati,kenya,f,young chimps,25,18/11/2018,,3,ID,3,r, B4,l,0,,yes,yes,,,1
+Bahati,kenya,f,young chimps,25,18/11/2018,,3,ID,4,r, B3,r,1,,no,yes,,,1
+Bahati,kenya,f,young chimps,25,18/11/2018,,3,ID,5,l, B4,l,1,,yes,yes,,,1
+Bahati,kenya,f,young chimps,25,18/11/2018,,3,ID,6,r, B4,r,1,,yes,no,,,1
+Bahati,kenya,f,young chimps,25,18/11/2018,,3,ID,7,r, B3,r,1,,no,yes,,,1
+Bahati,kenya,f,young chimps,25,18/11/2018,,3,ID,8,l, B3,l,1,,yes,no,,,1
+Bahati,kenya,f,young chimps,25,18/11/2018,,3,ID,9,r, B3,r,1,,yes,no,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,1,l,B2,r,0,,,,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,2,r,B1,l,0,,yes,yes,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,3,l,B1,r,0,,yes,no,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,4,r,B2,r,1,,yes,yes,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,5,l,B1,r,0,,yes,yes,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,6,l,B2,r,0,,no,yes,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,7,r,B2,l,0,,yes,no,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,8,r,B1,r,1,,no,yes,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,9,l,B1,r,0,,yes,no,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,10,r,B2,r,1,,yes,yes,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,11,l,B2,r,0,,yes,no,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,12,r,B1,r,1,,yes,yes,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,13,r,B1,r,1,,no,no,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,14,l,B1,r,0,,yes,no,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,15,r,B2,r,1,,yes,yes,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,16,l,B2,l,1,,yes,no,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,17,r,B1,r,1,,yes,yes,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,18,r,B2,r,1,,no,yes,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,19,l,B2,l,1,,yes,no,,,1
+Cheetah,kenya,f,old chimps,31,22/10/2018,,3,CD,20,l,B1,l,1,,no,yes,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,1,l,,r,0,,,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,2,r,,r,1,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,3,l,,r,0,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,4,r,,r,1,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,5,l,,r,0,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,6,r,,r,1,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,7,l,,r,0,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,8,r,,r,1,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,9,l,,l,1,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,10,r,,r,1,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,11,l,,r,0,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,12,r,,r,1,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,13,r,,r,1,,no,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,14,l,,r,0,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,15,l,,r,0,,no,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,16,r,,r,1,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,17,r,,r,1,,no,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,18,l,,r,0,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,19,r,,r,1,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,20,l,,r,0,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,21,r,,r,1,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,22,l,,r,0,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,23,r,,r,1,,yes,,,,1
+Cheetah,kenya,f,old chimps,31,27-Oct-18,,7,EDSD,24,l,,r,0,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,1,l,,r,0,,,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,2,r,,l,0,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,3,l,,l,1,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,4,r,,r,1,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,5,l,,l,1,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,6,r,,l,0,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,7,l,,l,1,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,8,r,,l,0,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,9,l,,r,0,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,10,r,,r,1,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,11,l,,r,0,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,12,r,,r,1,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,13,r,,l,0,,no,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,14,l,,l,1,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,15,l,,l,1,,no,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,16,r,,l,0,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,17,r,,r,1,,no,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,18,l,,l,1,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,19,r,,r,1,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,20,l,,l,1,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,21,r,,l,0,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,22,l,,r,0,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,23,r,,l,0,,yes,,,,1
+Dufatanya,kenya,f,young chimps,27,23-Nov-18,,8,EDSD,24,l,,r,0,,yes,,,,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,1,l,S7,l,1,,,,S7,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,2,r,S8,r,1,,yes,yes,S8,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,3,l,S8,r,0,,yes,no,S7,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,4,r,S7,r,1,,yes,yes,S7,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,5,l,S7,l,1,,yes,no,S7,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,6,r,S8,l,0,,yes,yes,S7,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,7,l,S8,r,0,,yes,no,S7,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,8,r,S7,r,1,,yes,yes,S7,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,9,r,S8,r,1,,no,yes,S8,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,10,l,S7,r,0,,yes,yes,S8,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,11,l,S8,r,0,,no,yes,S7,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,12,r,S7,r,1,,yes,yes,S7,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,13,l,S7,l,1,,yes,no,S7,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,14,r,S8,l,0,,yes,yes,S7,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,15,l,S8,r,0,,yes,no,S7,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,16,r,S7,r,1,,yes,yes,S7,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,17,l,S7,l,1,,yes,no,S7,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,18,r,S7,r,1,,yes,no,S7,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,19,l,S8,r,0,,yes,yes,S7,1,1
+Edvard,kenya,m,old chimps,18,24/10/2018,,5,ED,20,r,S8,r,1,,yes,no,S8,1,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,21,l,S8,l,1,,yes,no,S8,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,22,r,S7,l,0,,yes,yes,S8,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,23,l,S7,r,0,,yes,no,S8,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,24,r,S8,r,1,,yes,yes,S8,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,25,r,S7,r,1,,no,yes,S7,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,26,l,S8,r,0,,yes,yes,S7,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,27,r,S8,r,1,,yes,no,S8,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,28,l,S7,r,0,,yes,yes,S8,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,29,r,S7,r,1,,yes,no,S7,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,30,l,S8,r,0,,yes,yes,S7,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,31,l,S7,r,0,,no,yes,S8,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,32,r,S8,r,1,,yes,yes,S8,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,33,r,S8,r,1,,no,no,S8,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,34,l,S8,r,0,,yes,no,S7,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,35,r,S7,l,0,,yes,yes,S8,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,36,l,S7,l,1,,yes,no,S7,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,37,r,S8,l,0,,yes,yes,S7,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,38,l,S8,r,0,,yes,no,S7,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,39,l,S7,l,1,,no,yes,S7,2,1
+Edvard,kenya,m,old chimps,18,25/10/2018,,6,ED,40,r,S7,r,1,,yes,no,S7,2,1
+Joy,kenya,f,young chimps,14,16/11/2018,,3,CD,1,l,B2,r,0,,,,,,1
+Joy,kenya,f,young chimps,14,16/11/2018,,3,CD,2,r,B1,l,0,,yes,yes,,,1
+Joy,kenya,f,young chimps,14,16/11/2018,,3,CD,3,l,B1,l,1,,yes,no,,,1
+Joy,kenya,f,young chimps,14,16/11/2018,,3,CD,4,r,B2,r,1,,yes,yes,,,1
+Joy,kenya,f,young chimps,14,16/11/2018,,3,CD,5,l,B1,l,1,,yes,yes,,,1
+Joy,kenya,f,young chimps,14,16/11/2018,,3,CD,6,l,B2,l,1,,no,yes,,,1
+Joy,kenya,f,young chimps,14,16/11/2018,,3,CD,7,r,B2,l,0,,yes,no,,,1
+Joy,kenya,f,young chimps,14,16/11/2018,,3,CD,8,r,B1,r,1,,no,yes,,,1
+Joy,kenya,f,young chimps,14,16/11/2018,,3,CD,9,l,B1,l,1,,yes,no,,,1
+Joy,kenya,f,young chimps,14,16/11/2018,,3,CD,10,r,B2,r,1,,yes,yes,,,1
+Joy,kenya,f,young chimps,14,16/11/2018,,3,CD,11,l,B2,l,1,,yes,no,,,1
+Joy,kenya,f,young chimps,14,16/11/2018,,3,CD,12,r,B1,r,1,,yes,yes,,,1
+Joy,kenya,f,young chimps,14,16/11/2018,,3,CD,13,r,B1,r,1,,no,no,,,1
+Joy,kenya,f,young chimps,14,17/11/2018,,3,ID,1,l, B4,l,1,,,,,,1
+Joy,kenya,f,young chimps,14,17/11/2018,,3,ID,2,l, B3,l,1,,no,yes,,,1
+Joy,kenya,f,young chimps,14,17/11/2018,,3,ID,3,r, B4,l,0,,yes,yes,,,1
+Joy,kenya,f,young chimps,14,17/11/2018,,3,ID,4,r, B3,r,1,,no,yes,,,1
+Joy,kenya,f,young chimps,14,17/11/2018,,3,ID,5,l, B4,r,0,,yes,yes,,,1
+Joy,kenya,f,young chimps,14,17/11/2018,,3,ID,6,r, B4,r,1,,yes,no,,,1
+Joy,kenya,f,young chimps,14,17/11/2018,,3,ID,7,r, B3,r,1,,no,yes,,,1
+Joy,kenya,f,young chimps,14,17/11/2018,,3,ID,8,l, B3,r,0,,yes,no,,,1
+Joy,kenya,f,young chimps,14,17/11/2018,,3,ID,9,r, B3,r,1,,yes,no,,,1
+Joy,kenya,f,young chimps,14,17/11/2018,,3,ID,10,l, B3,l,1,,yes,no,,,1
+Joy,kenya,f,young chimps,14,17/11/2018,,3,ID,11,l, B4,r,0,,no,yes,,,1
+Joy,kenya,f,young chimps,14,17/11/2018,,3,ID,12,r, B4,l,0,,yes,no,,,1
+Joy,kenya,f,young chimps,14,17/11/2018,,3,ID,13,l, B3,l,1,,yes,yes,,,1
+Joy,kenya,f,young chimps,14,17/11/2018,,3,ID,14,r, B3,r,1,,yes,no,,,1
+Joy,kenya,f,young chimps,14,17/11/2018,,3,ID,15,r, B4,r,1,,no,yes,,,1
+Joy,kenya,f,young chimps,14,17/11/2018,,3,ID,16,l, B4,l,1,,yes,no,,,1
+Joy,kenya,f,young chimps,14,17/11/2018,,3,ID,17,l, B3,l,1,,no,yes,,,1
+Joy,kenya,f,young chimps,14,17/11/2018,,3,ID,18,r, B3,r,1,,yes,no,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,1,r,,r,1,,,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,2,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,3,l,,r,0,,no,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,4,r,,r,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,5,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,6,r,,l,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,7,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,8,r,,r,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,9,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,10,r,,r,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,11,r,,r,1,,no,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,12,l,,l,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,13,l,,r,0,,no,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,14,r,,r,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,15,r,,l,0,,no,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,16,l,,l,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,17,r,,r,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,18,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,19,r,,l,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,20,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,21,l,,r,0,,no,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,22,r,,l,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,23,r,,r,1,,no,,,,1
+Julia,kenya,f,old chimps,18,20/10/2018,8,1,SD,24,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,1,r,,r,1,,,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,2,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,3,l,,l,1,,no,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,4,r,,l,0,changed choice before touchign material,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,5,l,,l,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,6,r,,r,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,7,l,,l,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,8,r,,l,0,changed choice before touchign material,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,9,l,,l,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,10,r,,r,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,11,r,,r,1,,no,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,12,l,,l,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,13,l,,l,1,,no,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,14,r,,l,0,changed choice before touchign material,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,15,r,,r,1,,no,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,16,l,,l,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,17,r,,r,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,18,l,,l,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,19,r,,r,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SD,20,l,,l,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,21,l,,r,0,,no,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,22,r,,l,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,23,r,,l,0,,no,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,24,l,,l,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,25,r,,l,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,26,l,,l,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,27,l,,r,0,,no,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,28,r,,r,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,29,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,30,r,,l,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,31,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,32,r,,l,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,33,l,,l,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,34,r,,l,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,35,r,,l,0,,no,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,36,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,37,l,,r,0,,no,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,38,r,,l,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,39,r,,l,0,,no,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,40,l,,l,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,41,r,,l,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,42,l,,l,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,43,r,,l,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,21/10/2018,8,2,SR,44,l,,l,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,23/10/2018,,4,ID,1,l, B4,l,1,,,,,,1
+Julia,kenya,f,old chimps,18,23/10/2018,,4,ID,2,l, B3,l,1,,no,yes,,,1
+Julia,kenya,f,old chimps,18,23/10/2018,,4,ID,3,r, B4,r,1,,yes,yes,,,1
+Julia,kenya,f,old chimps,18,23/10/2018,,4,ID,4,r, B3,r,1,,no,yes,,,1
+Julia,kenya,f,old chimps,18,23/10/2018,,4,ID,5,l, B4,r,0,,yes,yes,,,1
+Julia,kenya,f,old chimps,18,23/10/2018,,4,ID,6,r, B4,r,1,,yes,no,,,1
+Julia,kenya,f,old chimps,18,23/10/2018,,4,ID,7,r, B3,r,1,,no,yes,,,1
+Julia,kenya,f,old chimps,18,23/10/2018,,4,ID,8,l, B3,l,1,,yes,no,,,1
+Julia,kenya,f,old chimps,18,23/10/2018,,4,ID,9,r, B3,r,1,,yes,no,,,1
+Julia,kenya,f,old chimps,18,23/10/2018,,4,ID,10,l, B3,r,0,,yes,no,,,1
+Julia,kenya,f,old chimps,18,23/10/2018,,4,ID,11,l, B4,r,0,,no,yes,,,1
+Julia,kenya,f,old chimps,18,23/10/2018,,4,ID,12,r, B4,r,1,,yes,no,,,1
+Julia,kenya,f,old chimps,18,23/10/2018,,4,ID,13,l, B3,l,1,,yes,yes,,,1
+Julia,kenya,f,old chimps,18,23/10/2018,,4,ID,14,r, B3,r,1,,yes,no,,,1
+Julia,kenya,f,old chimps,18,23/10/2018,,4,ID,15,r, B4,r,1,,no,yes,,,1
+Julia,kenya,f,old chimps,18,23/10/2018,,4,ID,16,l, B4,l,1,,yes,no,,,1
+Julia,kenya,f,old chimps,18,23/10/2018,,4,ID,17,l, B3,l,1,,no,yes,,,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,1,l,S7,r,0,,,,S8,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,2,r,S8,r,1,,yes,yes,S8,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,3,l,S8,r,0,,yes,no,S7,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,4,r,S7,r,1,,yes,yes,S7,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,5,l,S7,r,0,,yes,no,S8,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,6,r,S8,r,1,,yes,yes,S8,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,7,l,S8,l,1,,yes,no,S8,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,8,r,S7,l,0,,yes,yes,S8,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,9,r,S8,r,1,,no,yes,S8,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,10,l,S7,r,0,,yes,yes,S8,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,11,l,S8,r,0,,no,yes,S7,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,12,r,S7,r,1,,yes,yes,S7,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,13,l,S7,r,0,,yes,no,S8,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,14,r,S8,l,0,,yes,yes,S7,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,15,l,S8,r,0,,yes,no,S7,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,16,r,S7,r,1,,yes,yes,S7,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,17,l,S7,l,1,,yes,no,S7,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,18,r,S7,r,1,,yes,no,S7,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,19,r,S8,l,0,different side ,no,yes,S7,1,1
+Julia,kenya,f,old chimps,18,24/10/2018,,5,ED,20,l,S8,r,0,different side ,yes,no,S7,1,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,21,l,S8,r,0,,no,no,S7,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,22,r,S7,l,0,,yes,yes,S8,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,23,l,S7,l,1,,yes,no,S7,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,24,r,S8,l,0,,yes,yes,S7,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,25,r,S7,r,1,,no,yes,S7,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,26,l,S8,r,0,,yes,yes,S7,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,27,r,S8,l,0,,yes,no,S7,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,28,l,S7,l,1,,yes,yes,S7,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,29,r,S7,l,0,,yes,no,S8,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,30,l,S8,r,0,,yes,yes,S7,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,31,l,S7,l,1,,no,yes,S7,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,32,r,S8,l,0,,yes,yes,S7,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,33,r,S8,l,0,,no,no,S7,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,34,l,S8,r,0,,yes,no,S7,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,35,r,S7,r,1,,yes,yes,S7,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,36,l,S7,l,1,,yes,no,S7,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,37,r,S8,l,0,,yes,yes,S7,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,38,l,S8,r,0,,yes,no,S7,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,39,l,S7,l,1,,no,yes,S7,2,1
+Julia,kenya,f,old chimps,18,25/10/2018,,6,ED,40,r,S7,r,1,,yes,no,S7,2,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,1,l,,r,0,,,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,2,r,,r,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,3,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,4,r,,r,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,5,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,6,r,,l,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,7,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,8,r,,r,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,9,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,10,r,,r,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,11,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,12,r,,r,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,13,r,,r,1,,no,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,14,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,15,l,,r,0,,no,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,16,r,,r,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,17,r,,r,1,,no,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,18,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,19,r,,r,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,20,l,,r,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,21,r,,l,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,22,l,,l,1,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,23,r,,l,0,,yes,,,,1
+Julia,kenya,f,old chimps,18,27-Oct-18,,7,EDSD,24,l,,l,1,,yes,,,,1
+Kisa,kenya,m,young chimps,25,21/11/2018,,6,ID,1,l, B4,r,0,,,,,,1
+Kisa,kenya,m,young chimps,25,21/11/2018,,6,ID,2,l, B3,l,1,,no,yes,,,1
+Kisa,kenya,m,young chimps,25,21/11/2018,,6,ID,3,r, B4,r,1,,yes,yes,,,1
+Kisa,kenya,m,young chimps,25,21/11/2018,,6,ID,4,r, B3,r,1,,no,yes,,,1
+Kisa,kenya,m,young chimps,25,21/11/2018,,6,ID,5,l, B4,r,0,,yes,yes,,,1
+Kisa,kenya,m,young chimps,25,21/11/2018,,6,ID,6,r, B4,r,1,,yes,no,,,1
+Kisa,kenya,m,young chimps,25,21/11/2018,,6,ID,7,r, B3,r,1,,no,yes,,,1
+Kisa,kenya,m,young chimps,25,21/11/2018,,6,ID,8,l, B3,r,0,,yes,no,,,1
+Kisa,kenya,m,young chimps,25,21/11/2018,,6,ID,9,r, B3,r,1,,yes,no,,,1
+Kisa,kenya,m,young chimps,25,21/11/2018,,6,ID,10,l, B3,l,1,,yes,no,,,1
+Kisa,kenya,m,young chimps,25,21/11/2018,,6,ID,11,l, B4,l,1,,no,yes,,,1
+Kisa,kenya,m,young chimps,25,21/11/2018,,6,ID,12,r, B4,r,1,,yes,no,,,1
+Kisa,kenya,m,young chimps,25,21/11/2018,,6,ID,13,l, B3,l,1,,yes,yes,,,1
+Kisa,kenya,m,young chimps,25,21/11/2018,,6,ID,14,r, B3,r,1,,yes,no,,,1
+Kisa,kenya,m,young chimps,25,24-Nov-18,,8,EDSD,1,l,,r,0,did not search,,,,,1
+Kisa,kenya,m,young chimps,25,24-Nov-18,,8,EDSD,2,r,,r,1,did not search,yes,,,,1
+Kisa,kenya,m,young chimps,25,24-Nov-18,,8,EDSD,3,l,,r,0,did not search,yes,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,4,r,,r,1,did not search,yes,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,5,l,,r,0,,yes,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,6,r,,r,1,,yes,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,7,l,,l,1,,yes,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,8,r,,r,1,,yes,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,9,l,,r,0,,yes,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,10,r,,r,1,,yes,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,11,l,,r,0,,yes,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,12,r,,r,1,,yes,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,13,r,,r,1,,no,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,14,l,,r,0,,yes,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,15,l,,r,0,,no,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,16,r,,r,1,,yes,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,17,r,,r,1,,no,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,18,l,,r,0,,yes,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,19,r,,r,1,,yes,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,20,l,,l,1,,yes,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,21,r,,r,1,,yes,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,22,l,,l,1,,yes,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,23,r,,r,1,,yes,,,,1
+Kisa,kenya,m,young chimps,25,01-Dec-18,,8,EDSD,24,l,,r,0,,yes,,,,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,1,l,S7,r,0,,,,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,2,r,S8,r,1,,yes,yes,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,3,l,S8,l,1,,yes,no,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,4,r,S7,l,0,,yes,yes,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,5,l,S7,r,0,,yes,no,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,6,r,S8,r,1,,yes,yes,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,7,l,S8,l,1,,yes,no,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,8,r,S7,l,0,,yes,yes,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,9,r,S8,r,1,,no,yes,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,10,l,S7,r,0,,yes,yes,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,11,l,S8,l,1,,no,yes,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,12,r,S7,l,0,,yes,yes,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,13,l,S7,r,0,,yes,no,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,14,r,S8,r,1,,yes,yes,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,15,l,S8,l,1,,yes,no,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,16,r,S7,l,0,,yes,yes,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,17,l,S7,r,0,,yes,no,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,18,r,S7,l,0,,yes,no,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,19,l,S8,l,1,,yes,yes,S8,1,1
+Manno,kenya,m,young chimps,5,19/10/2018,11,4,ED,20,r,S8,r,1,,yes,no,S8,1,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,21,l,S8,l,1,,yes,no,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,22,r,S7,l,0,,yes,yes,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,23,l,S7,r,0,,yes,no,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,24,r,S8,r,1,,yes,yes,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,25,r,S7,l,0,,no,yes,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,26,l,S8,l,1,,yes,yes,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,27,r,S8,r,1,,yes,no,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,28,l,S7,r,0,,yes,yes,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,29,r,S7,l,0,,yes,no,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,30,l,S8,l,1,,yes,yes,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,31,l,S7,r,0,,no,yes,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,32,r,S8,r,1,,yes,yes,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,33,r,S8,r,1,,no,no,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,34,l,S8,l,1,,yes,no,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,35,r,S7,l,0,,yes,yes,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,36,l,S7,r,0,,yes,no,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,37,r,S8,r,1,,yes,yes,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,38,l,S8,l,1,,yes,no,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,39,l,S7,r,0,,no,yes,S8,2,1
+Manno,kenya,m,young chimps,5,20/10/2018,11,5,ED,40,r,S7,l,0,,yes,no,S8,2,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,1,l,S7,l,1,,,,S7,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,2,r,S8,l,0,indecisive,yes,yes,S7,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,3,l,S8,l,1,,yes,no,S8,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,4,r,S7,l,0,,yes,yes,S8,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,5,l,S7,l,1,,yes,no,S7,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,6,r,S8,r,1,,yes,yes,S8,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,7,l,S8,r,0,,yes,no,S7,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,8,r,S7,r,1,,yes,yes,S7,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,9,r,S8,r,1,,no,yes,S8,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,10,l,S7,l,1,,yes,yes,S7,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,11,l,S8,l,1,indecisive,no,yes,S8,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,12,r,S7,l,0,,yes,yes,S8,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,13,l,S7,l,1,,yes,no,S7,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,14,r,S8,r,1,,yes,yes,S8,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,15,l,S8,r,0,,yes,no,S7,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,16,r,S7,r,1,,yes,yes,S7,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,17,l,S7,r,0,,yes,no,S8,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,18,r,S7,r,1,,yes,no,S7,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,19,l,S8,r,0,,yes,yes,S7,1,1
+Mary,kenya,f,old chimps,15,25/10/2018,,6,ED,20,r,S8,l,0,,yes,no,S7,1,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,21,l,S8,r,0,,yes,no,S7,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,22,r,S7,r,1,,yes,yes,S7,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,23,l,S7,l,1,,yes,no,S7,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,24,r,S8,l,0,,yes,yes,S7,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,25,r,S7,r,1,,no,yes,S7,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,26,l,S8,r,0,,yes,yes,S7,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,27,r,S8,l,0,,yes,no,S7,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,28,l,S7,l,1,,yes,yes,S7,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,29,r,S7,r,1,,yes,no,S7,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,30,l,S8,r,0,,yes,yes,S7,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,31,l,S7,r,0,,no,yes,S8,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,32,r,S8,l,0,,yes,yes,S7,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,33,r,S8,l,0,,no,no,S7,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,34,l,S8,r,0,,yes,no,S7,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,35,r,S7,r,1,,yes,yes,S7,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,36,l,S7,l,1,,yes,no,S7,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,37,r,S8,l,0,,yes,yes,S7,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,38,l,S8,r,0,,yes,no,S7,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,39,l,S7,l,1,,no,yes,S7,2,1
+Mary,kenya,f,old chimps,15,27-Oct-18,,7,ED,40,r,S7,r,1,,yes,no,S7,2,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,1,r,,r,1,,,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,2,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,3,l,,r,0,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,4,r,,r,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,5,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,6,r,,r,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,7,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,8,r,,r,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,9,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,10,r,,r,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,11,r,,r,1,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,12,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,13,l,,r,0,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,14,r,,l,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,15,r,,r,1,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,16,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,17,r,,r,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,18,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,19,r,,r,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,20,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,21,l,,r,0,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,22,r,,r,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,23,r,,r,1,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,20/10/2018,8,1,SD,24,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,1,r,,r,1,,,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,2,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,3,l,,l,1,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,4,r,,r,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,5,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,6,r,,l,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,7,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,8,r,,r,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,9,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,10,r,,l,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,11,r,,r,1,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,12,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,13,l,,r,0,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,14,r,,r,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,15,r,,r,1,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,16,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,17,r,,r,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,18,l,,l,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,19,r,,r,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,20,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,21,l,,l,1,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,22,r,,r,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,23,r,,r,1,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,21/10/2018,8,2,SD,24,l,,l,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SD,1,r,,r,1,,,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SD,2,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SD,3,l,,l,1,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SD,4,r,,r,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SD,5,l,,l,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SD,6,r,,r,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SD,7,l,,l,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SD,8,r,,r,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,9,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,10,r,,l,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,11,r,,l,0,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,12,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,13,l,,r,0,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,14,r,,l,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,15,r,,l,0,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,16,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,17,r,,l,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,18,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,19,r,,l,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,20,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,21,l,,r,0,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,22,r,,l,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,23,r,,l,0,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,24,l,,l,1,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,25,r,,l,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,26,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,27,l,,r,0,,no,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,28,r,,l,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,29,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,30,r,,l,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,31,l,,r,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,22/10/2018,8,3,SR,32,r,,l,0,,yes,,,,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,1,l,S7,r,0,,,,S8,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,2,r,S8,r,1,,yes,yes,S8,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,3,l,S8,r,0,,yes,no,S7,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,4,r,S7,r,1,,yes,yes,S7,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,5,l,S7,l,1,,yes,no,S7,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,6,r,S8,r,1,,yes,yes,S8,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,7,l,S8,r,0,,yes,no,S7,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,8,r,S7,r,1,,yes,yes,S7,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,9,r,S8,r,1,,no,yes,S8,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,10,l,S7,r,0,,yes,yes,S8,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,11,l,S8,r,0,,no,yes,S7,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,12,r,S7,r,1,,yes,yes,S7,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,13,l,S7,l,1,,yes,no,S7,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,14,r,S8,l,0,,yes,yes,S7,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,15,l,S8,r,0,,yes,no,S7,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,16,r,S7,r,1,,yes,yes,S7,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,17,l,S7,l,1,,yes,no,S7,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,18,r,S7,r,1,,yes,no,S7,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,19,l,S8,r,0,,yes,yes,S7,1,1
+Mwanzo,kenya,f,old chimps,22,25/10/2018,,6,ED,20,r,S8,l,0,,yes,no,S7,1,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,21,l,S8,r,0,,yes,no,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,22,r,S7,r,1,,yes,yes,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,23,l,S7,l,1,,yes,no,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,24,r,S8,l,0,,yes,yes,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,25,r,S7,r,1,,no,yes,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,26,l,S8,r,0,,yes,yes,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,27,r,S8,l,0,,yes,no,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,28,l,S7,l,1,,yes,yes,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,29,r,S7,r,1,,yes,no,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,30,l,S8,r,0,,yes,yes,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,31,l,S7,l,1,,no,yes,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,32,r,S8,l,0,,yes,yes,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,33,r,S8,l,0,,no,no,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,34,l,S8,r,0,,yes,no,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,35,r,S7,r,1,,yes,yes,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,36,l,S7,l,1,,yes,no,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,37,r,S8,l,0,,yes,yes,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,38,l,S8,r,0,,yes,no,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,39,l,S7,l,1,,no,yes,S7,2,1
+Mwanzo,kenya,f,old chimps,22,27-Oct-18,,7,ED,40,r,S7,r,1,,yes,no,S7,2,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,1,l,S7,r,0,,,,S8,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,2,r,S8,r,1,,yes,yes,S8,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,3,l,S8,r,0,,yes,no,S7,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,4,r,S7,r,1,,yes,yes,S7,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,5,l,S7,r,0,,yes,no,S8,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,6,r,S8,r,1,,yes,yes,S8,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,7,l,S8,r,0,,yes,no,S7,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,8,r,S7,r,1,,yes,yes,S7,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,9,r,S8,r,1,,no,yes,S8,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,10,l,S7,r,0,,yes,yes,S8,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,11,l,S8,r,0,,no,yes,S7,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,12,r,S7,r,1,,yes,yes,S7,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,13,l,S7,r,0,,yes,no,S8,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,14,r,S8,l,0,,yes,yes,S7,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,15,l,S8,r,0,,yes,no,S7,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,16,r,S7,r,1,,yes,yes,S7,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,17,l,S7,r,0,,yes,no,S8,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,18,r,S7,r,1,,yes,no,S7,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,19,l,S8,r,0,,yes,yes,S7,1,1
+Niyonkuru,kenya,m,young chimps,28,19/11/2018,,5,ED,20,r,S8,r,1,,yes,no,S8,1,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,21,l,S8,r,0,,yes,no,S7,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,22,r,S7,r,1,,yes,yes,S7,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,23,l,S7,r,0,,yes,no,S8,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,24,r,S8,r,1,,yes,yes,S8,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,25,r,S7,r,1,,no,yes,S7,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,26,l,S8,r,0,,yes,yes,S7,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,27,r,S8,l,0,,yes,no,S7,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,28,l,S7,r,0,,yes,yes,S8,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,29,r,S7,r,1,,yes,no,S7,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,30,l,S8,r,0,,yes,yes,S7,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,31,l,S7,l,1,,no,yes,S7,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,32,r,S8,l,0,,yes,yes,S7,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,33,r,S8,r,1,,no,no,S8,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,34,l,S8,r,0,,yes,no,S7,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,35,r,S7,r,1,,yes,yes,S7,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,36,l,S7,r,0,,yes,no,S8,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,37,r,S8,l,0,,yes,yes,S7,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,38,l,S8,r,0,,yes,no,S7,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,39,l,S7,l,1,,no,yes,S7,2,1
+Niyonkuru,kenya,m,young chimps,28,21/11/2018,,6,ED,40,r,S7,r,1,,yes,no,S7,2,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,1,l,,r,0,,,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,2,r,,r,1,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,3,l,,r,0,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,4,r,,r,1,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,5,l,,r,0,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,6,r,,r,1,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,7,l,,r,0,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,8,r,,r,1,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,9,l,,r,0,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,10,r,,r,1,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,11,l,,r,0,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,12,r,,r,1,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,13,r,,r,1,,no,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,14,l,,r,0,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,15,l,,r,0,,no,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,16,r,,r,1,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,17,r,,r,1,,no,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,18,l,,r,0,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,19,r,,r,1,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,20,l,,r,0,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,21,r,,r,1,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,22,l,,r,0,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,23,r,,r,1,,yes,,,,1
+Niyonkuru,kenya,m,young chimps,28,22-Nov-18,,7,EDSD,24,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,1,r,,r,1,,,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,2,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,3,l,,r,0,,no,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,4,r,,l,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,5,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,6,r,,r,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,7,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,8,r,,r,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,9,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,10,r,,r,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,11,r,,r,1,,no,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,12,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,13,l,,r,0,,no,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,14,r,,r,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,15,r,,r,1,,no,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,16,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,17,r,,r,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,18,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,19,r,,r,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,20,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,21,l,,r,0,,no,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,22,r,,r,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,23,r,,r,1,,no,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,24,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,25,r,,r,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,26,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,27,l,,l,1,,no,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,28,r,,r,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,29,l,,l,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,30,r,,r,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,31,l,,l,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,21/11/2018,8,1,SD,32,r,,r,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,1,l,,r,0,,,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,2,r,,r,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,3,r,,r,1,,no,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,4,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,5,l,,r,0,,no,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,6,r,,l,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,7,r,,r,1,,no,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,8,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,9,r,,r,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,10,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,11,r,,r,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,12,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,13,l,,r,0,,no,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,14,r,,r,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,15,r,,l,0,,no,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,16,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,17,r,,r,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,18,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,19,l,,r,0,,no,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,20,r,,r,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,21,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,22,r,,l,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,23,l,,r,0,,yes,,,,1
+Oscar,kenya,m,old chimps,21,22/11/2018,8,2,SR,24,r,,r,1,,yes,,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,1,l,B2,r,0,,,,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,2,r,B1,r,1,,yes,yes,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,3,l,B1,r,0,,yes,no,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,4,r,B2,r,1,,yes,yes,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,5,l,B1,r,0,,yes,yes,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,6,l,B2,r,0,,no,yes,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,7,r,B2,r,1,,yes,no,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,8,r,B1,r,1,,no,yes,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,9,l,B1,r,0,,yes,no,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,10,r,B2,r,1,,yes,yes,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,11,l,B2,r,0,,yes,no,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,12,r,B1,r,1,,yes,yes,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,13,r,B1,r,1,,no,no,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,14,l,B1,l,1,,yes,no,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,15,r,B2,r,1,,yes,yes,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,16,l,B2,r,0,,yes,no,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,17,r,B1,r,1,,yes,yes,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,18,r,B2,r,1,,no,yes,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,19,l,B2,l,1,,yes,no,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,20,l,B1,l,1,,no,yes,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,21,r,B2,r,1,,yes,yes,,,1
+Oscar,kenya,m,old chimps,21,23/11/2018,9,3,CD,22,l,B1,l,1,,yes,yes,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SD,1,r,,l,0,,,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SD,2,l,,l,1,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SD,3,l,,r,0,,no,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SD,4,r,,r,1,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SD,5,l,,r,0,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SD,6,r,,r,1,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SD,7,l,,l,1,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SD,8,r,,r,1,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SD,9,l,,l,1,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SD,10,r,,r,1,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SD,11,r,,r,1,,no,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,25,r,,l,0,,no,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,26,l,,l,1,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,27,l,,r,0,,no,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,28,r,,l,0,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,29,l,,l,1,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,30,r,,l,0,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,31,l,,l,1,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,32,r,,l,0,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,33,l,,r,0,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,34,r,,l,0,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,35,r,,l,0,,no,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,12,l,,r,0,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,13,l,,r,0,,no,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,14,r,,l,0,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,15,r,,l,0,,no,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,16,l,,r,0,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,17,r,,l,0,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,18,l,,r,0,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,19,r,,l,0,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,20,l,,r,0,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,21,l,,r,0,,no,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,22,r,,r,1,,yes,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,23,r,,l,0,,no,,,,1
+Roy,kenya,m,young chimps,11,16/10/2018,8,1,SR,24,l,,r,0,,yes,,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,1,l,B2,r,0,,,,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,2,r,B1,l,0,,yes,yes,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,3,l,B1,l,1,,yes,no,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,4,r,B2,r,1,,yes,yes,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,5,l,B1,l,1,,yes,yes,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,6,l,B2,l,1,,no,yes,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,7,r,B2,l,0,,yes,no,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,8,r,B1,r,1,,no,yes,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,9,l,B1,l,1,,yes,no,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,10,r,B2,r,1,,yes,yes,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,11,l,B2,l,1,,yes,no,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,12,r,B1,r,1,,yes,yes,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,13,r,B1,l,0,,no,no,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,14,l,B1,l,1,,yes,no,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,15,r,B2,r,1,,yes,yes,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,16,l,B2,l,1,,yes,no,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,17,r,B1,r,1,,yes,yes,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,18,r,B2,r,1,,no,yes,,,1
+Jane,kenya,f,young chimps,14,17/10/2018,9,2,CD,19,l,B2,l,1,,yes,no,,,1
+William,kenya,m,young chimps,18,17/10/2018,9,2,CD,1,l,B2,r,0,,,,,,1
+William,kenya,m,young chimps,18,17/10/2018,9,2,CD,2,r,B1,l,0,,yes,yes,,,1
+William,kenya,m,young chimps,18,17/10/2018,9,2,CD,3,l,B1,l,1,,yes,no,,,1
+William,kenya,m,young chimps,18,17/10/2018,9,2,CD,4,r,B2,r,1,,yes,yes,,,1
+William,kenya,m,young chimps,18,17/10/2018,9,2,CD,5,l,B1,l,1,,yes,yes,,,1
+William,kenya,m,young chimps,18,17/10/2018,9,2,CD,6,l,B2,l,1,,no,yes,,,1
+William,kenya,m,young chimps,18,17/10/2018,9,2,CD,7,r,B2,r,1,,yes,no,,,1
+William,kenya,m,young chimps,18,17/10/2018,9,2,CD,8,r,B1,r,1,,no,yes,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SD,1,r,,l,0,,,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SD,2,l,,l,1,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SD,3,l,,l,1,,no,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SD,4,r,,r,1,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SD,5,l,,r,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SD,6,r,,r,1,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SD,7,l,,r,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SD,8,r,,r,1,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SD,9,l,,r,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SD,10,r,,r,1,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SD,11,r,,r,1,,no,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SD,12,l,,l,1,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SD,13,l,,l,1,,no,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SD,14,r,,r,1,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SD,15,r,,r,1,,no,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,1,l,,r,0,,,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,2,r,,l,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,3,l,,r,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,4,r,,l,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,5,l,,r,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,6,l,,r,0,,no,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,7,r,,l,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,8,r,,l,0,,no,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,9,l,,r,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,10,r,,l,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,11,l,,r,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,12,l,,r,0,,no,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,13,r,,l,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,14,l,,r,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,15,r,,l,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,16,l,,r,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,17,r,,l,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,18,l,,r,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,19,r,,l,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,20,r,,l,0,,no,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,21,l,,r,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,22,l,,r,0,,no,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,23,r,,l,0,,yes,,,,1
+Bili,uganda,f,Uganda,21,10/12/2019,8,1,SR,24,r,,l,0,,no,,,,1
+Cocoa,uganda,f,Uganda,12,13/11/2019,9,2,CD,1,l,B2,r,0,,,,,,1
+Cocoa,uganda,f,Uganda,12,13/11/2019,9,2,CD,2,r,B1,r,1,,yes,yes,,,1
+Cocoa,uganda,f,Uganda,12,13/11/2019,9,2,CD,3,l,B1,r,0,,yes,no,,,1
+Cocoa,uganda,f,Uganda,12,13/11/2019,9,2,CD,4,r,B2,l,0,,yes,yes,,,1
+Cocoa,uganda,f,Uganda,12,13/11/2019,9,2,CD,5,l,B1,l,1,,yes,yes,,,1
+Cocoa,uganda,f,Uganda,12,13/11/2019,9,2,CD,6,l,B2,l,1,,no,yes,,,1
+Cocoa,uganda,f,Uganda,12,13/11/2019,9,2,CD,7,r,B2,r,1,,yes,no,,,1
+Cocoa,uganda,f,Uganda,12,13/11/2019,9,2,CD,8,r,B1,r,1,,no,yes,,,1
+Cocoa,uganda,f,Uganda,12,13/11/2019,9,2,CD,9,l,B1,l,1,,yes,no,,,1
+Cocoa,uganda,f,Uganda,12,13/11/2019,9,2,CD,10,r,B2,r,1,,yes,yes,,,1
+Indi,uganda,m,Uganda,19,24/10/2019,9,3,CD,1,l,B2,l,1,,,,,,1
+Indi,uganda,m,Uganda,19,24/10/2019,9,3,CD,2,r,B1,r,1,,yes,yes,,,1
+Indi,uganda,m,Uganda,19,24/10/2019,9,3,CD,3,l,B1,r,0,,yes,no,,,1
+Indi,uganda,m,Uganda,19,24/10/2019,9,3,CD,4,r,B2,r,1,,yes,yes,,,1
+Indi,uganda,m,Uganda,19,24/10/2019,9,3,CD,5,l,B1,l,1,,yes,yes,,,1
+Indi,uganda,m,Uganda,19,24/10/2019,9,3,CD,6,l,B2,l,1,,no,yes,,,1
+Indi,uganda,m,Uganda,19,24/10/2019,9,3,CD,7,r,B2,r,1,,yes,no,,,1
+Indi,uganda,m,Uganda,19,24/10/2019,9,3,CD,8,r,B1,r,1,,no,yes,,,1
+Indi,uganda,m,Uganda,19,24/10/2019,9,3,CD,9,l,B1,l,1,,yes,no,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,1,r,,l,0,,,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,2,l,,l,1,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,3,l,,r,0,,no,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,4,r,,l,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,5,l,,l,1,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,6,r,,r,1,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,7,l,,r,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,8,r,,r,1,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,9,l,,r,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,10,r,,l,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,11,r,,l,0,,no,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,12,l,,l,1,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,13,l,,r,0,,no,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,14,r,,l,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,15,r,,r,1,,no,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,16,l,,r,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,17,r,,r,1,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,18,l,,r,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,19,r,,r,1,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,20,l,,r,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,21,l,,r,0,,no,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,22,r,,l,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,23,r,,r,1,,no,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,24,l,,r,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,25,r,,r,1,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,26,l,,r,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,27,l,,r,0,,no,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,28,r,,r,1,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,29,l,,r,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,30,r,,l,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,31,l,,r,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,32,r,,r,1,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,33,l,,l,1,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,34,r,,r,1,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,35,r,,r,1,,no,,,,1
+Kisembo,uganda,m,Uganda,20,21/10/2019,8,1,SD,36,l,,r,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SD,37,l,,l,1,,no,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SD,38,r,,l,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SD,39,r,,l,0,,no,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SD,40,l,,l,1,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SD,41,r,,r,1,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SD,42,l,,l,1,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SD,43,r,,r,1,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SD,44,l,,l,1,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SD,45,l,,l,1,,no,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,1,r,,l,0,,,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,2,r,,l,0,,no,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,3,l,,r,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,4,r,,l,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,5,l,,r,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,6,l,,r,0,,no,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,7,r,,l,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,8,l,,r,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,9,r,,l,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,10,r,,l,0,,no,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,11,l,,r,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,12,l,,r,0,,no,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,13,r,,l,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,14,r,,l,0,,no,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,15,l,,r,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,16,l,,r,0,,no,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,17,r,,l,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,18,r,,l,0,,no,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,19,l,,r,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,20,r,,l,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,21,l,,r,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,22,r,,l,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,23,l,,r,0,,yes,,,,1
+Kisembo,uganda,m,Uganda,20,22/10/2019,8,2,SR,24,l,,r,0,,no,,,,1
+Mawa,uganda,m,Uganda,23,15/12/2019,,3,ID,1,l, B4,l,1,,,,,,1
+Mawa,uganda,m,Uganda,23,15/12/2019,,3,ID,2,l, B3,l,1,,no,yes,,,1
+Mawa,uganda,m,Uganda,23,15/12/2019,,3,ID,3,r, B4,r,1,,yes,yes,,,1
+Mawa,uganda,m,Uganda,23,15/12/2019,,3,ID,4,r, B3,r,1,,no,yes,,,1
+Mawa,uganda,m,Uganda,23,15/12/2019,,3,ID,5,l, B4,l,1,,yes,yes,,,1
+Mawa,uganda,m,Uganda,23,15/12/2019,,3,ID,6,r, B4,r,1,,yes,no,,,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,1,l,S7,r,0,,,,S8,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,2,r,S8,l,0,,yes,yes,S7,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,3,l,S8,r,0,,yes,no,S7,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,4,r,S7,r,1,,yes,yes,S7,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,5,l,S7,r,0,,yes,no,S8,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,6,r,S8,r,1,,yes,yes,S8,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,7,l,S8,r,0,,yes,no,S7,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,8,r,S7,r,1,,yes,yes,S7,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,9,r,S8,r,1,,no,yes,S8,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,10,l,S7,r,0,,yes,yes,S8,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,11,l,S8,r,0,,no,yes,S7,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,12,r,S7,r,1,,yes,yes,S7,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,13,l,S7,r,0,,yes,no,S8,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,14,r,S8,r,1,,yes,yes,S8,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,15,l,S8,r,0,,yes,no,S7,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,16,r,S7,r,1,,yes,yes,S7,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,17,l,S7,r,0,,yes,no,S8,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,18,r,S7,r,1,,yes,no,S7,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,19,l,S8,r,0,,yes,yes,S7,1,1
+Mawa,uganda,m,Uganda,23,16/12/2019,,4,ED,20,r,S8,r,1,,yes,no,S8,1,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,21,l,S8,r,0,,yes,no,S7,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,22,r,S7,l,0,,yes,yes,S8,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,23,l,S7,r,0,,yes,no,S8,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,24,r,S8,r,1,,yes,yes,S8,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,25,r,S7,l,0,,no,yes,S8,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,26,l,S8,l,1,,yes,yes,S8,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,27,r,S8,r,1,,yes,no,S8,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,28,l,S7,l,1,,yes,yes,S7,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,29,r,S7,r,1,,yes,no,S7,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,30,l,S8,r,0,,yes,yes,S7,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,31,l,S7,l,1,,no,yes,S7,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,32,r,S8,r,1,,yes,yes,S8,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,33,r,S8,r,1,,no,no,S8,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,34,l,S8,l,1,,yes,no,S8,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,35,r,S7,l,0,,yes,yes,S8,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,36,l,S7,l,1,,yes,no,S7,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,37,r,S8,l,0,,yes,yes,S7,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,38,l,S8,l,1,,yes,no,S8,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,39,l,S7,l,1,,no,yes,S7,2,1
+Mawa,uganda,m,Uganda,23,17/12/2019,,5,ED,40,r,S7,l,0,,yes,no,S8,2,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,1,l,S7,r,0,,,,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,2,r,S8,r,1,,yes,yes,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,3,l,S8,l,1,,yes,no,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,4,r,S7,l,0,,yes,yes,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,5,l,S7,r,0,,yes,no,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,6,r,S8,r,1,,yes,yes,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,7,l,S8,l,1,,yes,no,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,8,r,S7,l,0,,yes,yes,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,9,r,S8,r,1,,no,yes,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,10,l,S7,r,0,,yes,yes,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,11,l,S8,l,1,,no,yes,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,12,l,S7,r,0,,no,yes,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,13,r,S7,l,0,,yes,no,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,14,r,S8,r,1,,no,yes,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,15,l,S8,l,1,,yes,no,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,16,r,S7,l,0,,yes,yes,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,17,l,S7,r,0,,yes,no,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,18,r,S7,l,0,,yes,no,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,19,l,S8,l,1,,yes,yes,S8,1,1
+Medina,uganda,f,Uganda,12,24/10/2019,11,4,ED,20,r,S8,r,1,,yes,no,S8,1,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,21,l,S8,l,1,,yes,no,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,22,r,S7,l,0,,yes,yes,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,23,l,S7,r,0,,yes,no,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,24,r,S8,r,1,,yes,yes,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,25,r,S7,l,0,,no,yes,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,26,l,S8,l,1,,yes,yes,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,27,r,S8,r,1,,yes,no,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,28,l,S7,r,0,,yes,yes,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,29,r,S7,l,0,,yes,no,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,30,l,S8,l,1,,yes,yes,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,31,l,S7,r,0,,no,yes,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,32,r,S8,r,1,,yes,yes,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,33,r,S8,r,1,,no,no,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,34,l,S8,l,1,,yes,no,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,35,r,S7,l,0,,yes,yes,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,36,l,S7,r,0,,yes,no,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,37,r,S8,r,1,,yes,yes,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,38,l,S8,l,1,,yes,no,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,39,l,S7,r,0,,no,yes,S8,2,1
+Medina,uganda,f,Uganda,12,25/10/2019,11,5,ED,40,r,S7,l,0,,yes,no,S8,2,1
+Nakuu,uganda,f,Uganda,18,23/10/2019,10,3,ID,1,l,B4,r,0,,,,,,1
+Nakuu,uganda,f,Uganda,18,23/10/2019,10,3,ID,2,l,B3,l,1,,no,yes,,,1
+Nakuu,uganda,f,Uganda,18,23/10/2019,10,3,ID,3,r,B4,r,1,,yes,yes,,,1
+Nakuu,uganda,f,Uganda,18,23/10/2019,10,3,ID,4,r,B3,r,1,,no,yes,,,1
+Nakuu,uganda,f,Uganda,18,23/10/2019,10,3,ID,5,l,B4,l,1,,yes,yes,,,1
+Nakuu,uganda,f,Uganda,18,23/10/2019,10,3,ID,6,r,B4,r,1,,yes,no,,,1
+Nakuu,uganda,f,Uganda,18,23/10/2019,10,3,ID,7,r,B3,r,1,,no,yes,,,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,1,l,S7,r,0,,,,S8,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,2,r,S8,r,1,,yes,yes,S8,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,3,l,S8,r,0,,yes,no,S7,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,4,r,S7,l,0,,yes,yes,S8,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,5,l,S7,r,0,,yes,no,S8,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,6,r,S8,r,1,,yes,yes,S8,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,7,l,S8,l,1,,yes,no,S8,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,8,r,S7,l,0,,yes,yes,S8,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,9,r,S8,r,1,,no,yes,S8,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,10,l,S7,r,0,,yes,yes,S8,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,11,l,S8,l,1,,no,yes,S8,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,12,r,S7,l,0,,yes,yes,S8,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,13,l,S7,r,0,,yes,no,S8,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,14,r,S8,r,1,,yes,yes,S8,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,15,l,S8,l,1,,yes,no,S8,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,16,r,S7,l,0,,yes,yes,S8,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,17,l,S7,r,0,,yes,no,S8,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,18,r,S7,l,0,,yes,no,S8,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,19,l,S8,l,1,,yes,yes,S8,1,1
+Nakuu,uganda,f,Uganda,18,24/10/2019,11,4,ED,20,r,S8,r,1,,yes,no,S8,1,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,21,l,S8,l,1,,yes,no,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,22,r,S7,l,0,,yes,yes,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,23,l,S7,r,0,,yes,no,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,24,r,S8,r,1,,yes,yes,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,25,r,S7,l,0,,no,yes,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,26,l,S8,l,1,,yes,yes,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,27,r,S8,r,1,,yes,no,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,28,l,S7,r,0,,yes,yes,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,29,r,S7,l,0,,yes,no,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,30,l,S8,l,1,,yes,yes,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,31,l,S7,r,0,,no,yes,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,32,r,S8,r,1,,yes,yes,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,33,r,S8,r,1,,no,no,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,34,l,S8,l,1,,yes,no,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,35,r,S7,l,0,,yes,yes,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,36,l,S7,r,0,,yes,no,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,37,r,S8,r,1,,yes,yes,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,38,l,S8,l,1,,yes,no,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,39,l,S7,r,0,,no,yes,S8,2,1
+Nakuu,uganda,f,Uganda,18,25/10/2019,11,5,ED,40,r,S7,l,0,,yes,no,S8,2,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,1,r,,l,0,,,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,2,l,,r,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,3,l,,r,0,,no,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,4,r,,r,1,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,5,l,,r,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,6,r,,l,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,7,l,,r,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,8,r,,r,1,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,9,l,,r,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,10,r,,r,1,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,11,r,,r,1,,no,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,12,l,,r,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,13,l,,r,0,,no,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,14,r,,r,1,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,15,r,,r,1,,no,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,16,l,,r,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,17,r,,r,1,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,18,l,,r,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,19,r,,r,1,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,20,l,,l,1,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,21,l,,r,0,,no,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,22,r,,r,1,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,23,r,,r,1,,no,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,24,l,,r,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,25,r,,r,1,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,26,l,,l,1,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,27,l,,l,1,,no,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,28,r,,r,1,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,29,l,,l,1,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SD,30,r,,r,1,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SR,1,l,,r,0,,,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SR,2,r,,l,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SR,3,l,,r,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,13/11/2019,8,1,SR,4,r,,l,0,stopped because she ate toilet paper,yes,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,5,r,,l,0,E took out materials for her in this session,no,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,6,l,,l,1,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,7,l,,l,1,,no,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,8,r,,l,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,9,r,,l,0,,no,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,10,l,,r,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,11,r,,l,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,12,l,,r,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,13,r,,r,1,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,14,l,,r,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,15,l,,r,0,,no,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,16,r,,l,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,17,r,,l,0,,no,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,18,l,,r,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,19,r,,l,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,20,l,,r,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,21,l,,r,0,,no,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,22,r,,l,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,23,l,,r,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,8,2,SR,24,r,,l,0,,yes,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,10,4,ID,1,l,B4,r,0,,,,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,10,4,ID,2,l,B3,l,1,,no,yes,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,10,4,ID,3,r,B4,r,1,,yes,yes,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,10,4,ID,4,r,B3,r,1,,no,yes,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,10,4,ID,5,l,B4,l,1,,yes,yes,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,10,4,ID,6,l,B4,l,1,,no,no,,,1
+Namukisa,uganda,f,Uganda,21,14/11/2019,10,4,ID,7,r,B3,r,1,,yes,yes,,,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,1,l,S7,r,0,,,,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,2,r,S8,r,1,,yes,yes,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,3,l,S8,l,1,,yes,no,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,4,r,S7,l,0,,yes,yes,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,5,l,S7,r,0,,yes,no,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,6,r,S8,r,1,,yes,yes,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,7,l,S8,l,1,,yes,no,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,8,r,S7,l,0,,yes,yes,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,9,r,S8,r,1,,no,yes,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,10,l,S7,r,0,,yes,yes,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,11,l,S8,l,1,,no,yes,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,12,r,S7,l,0,,yes,yes,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,13,l,S7,r,0,,yes,no,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,14,r,S8,r,1,,yes,yes,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,15,l,S8,l,1,,yes,no,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,16,r,S7,l,0,,yes,yes,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,17,l,S7,r,0,,yes,no,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,18,r,S7,l,0,,yes,no,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,19,l,S8,l,1,,yes,yes,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,21/11/2019,,4,ED,20,r,S8,r,1,,yes,no,S8,1,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,21,l,S8,l,1,,yes,no,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,22,r,S7,l,0,,yes,yes,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,23,l,S7,r,0,,yes,no,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,24,r,S8,r,1,,yes,yes,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,25,r,S7,l,0,,no,yes,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,26,l,S8,l,1,,yes,yes,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,27,r,S8,r,1,,yes,no,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,28,l,S7,r,0,,yes,yes,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,29,r,S7,l,0,,yes,no,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,30,l,S8,l,1,,yes,yes,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,31,l,S7,r,0,,no,yes,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,32,r,S8,r,1,,yes,yes,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,33,r,S8,r,1,,no,no,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,34,l,S8,l,1,,yes,no,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,35,r,S7,l,0,,yes,yes,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,36,l,S7,r,0,,yes,no,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,37,r,S8,r,1,,yes,yes,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,38,l,S8,l,1,,yes,no,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,39,l,S7,r,0,,no,yes,S8,2,1
+Nkuumwa,uganda,f,Uganda,23,22/11/2019,,5,ED,40,r,S7,l,0,,yes,no,S8,2,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,1,l,B2,r,0,,,,,,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,2,r,B1,l,0,,yes,yes,,,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,3,l,B1,l,1,,yes,no,,,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,4,r,B2,l,0,,yes,yes,,,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,5,l,B1,r,0,,yes,yes,,,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,6,l,B2,l,1,,no,yes,,,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,7,r,B2,l,0,,yes,no,,,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,8,r,B1,l,0,,no,yes,,,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,9,l,B1,l,1,,yes,no,,,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,10,r,B2,l,0,,yes,yes,,,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,11,l,B2,l,1,,yes,no,,,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,12,r,B1,l,0,,yes,yes,,,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,13,r,B1,l,0,,no,no,,,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,14,l,B1,l,1,,yes,no,,,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,15,r,B2,r,1,,yes,yes,,,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,16,l,B2,l,1,,yes,no,,,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,17,r,B1,r,1,,yes,yes,,,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,18,r,B2,r,1,,no,yes,,,1
+Okech,uganda,m,Uganda,20,05/12/2019,,2,CD,19,l,B2,l,1,,yes,no,,,1
+Okech,uganda,m,Uganda,20,10/12/2019,10,3,ID,1,l,B4,l,1,,,,,,1
+Okech,uganda,m,Uganda,20,10/12/2019,10,3,ID,2,l,B3,l,1,,no,yes,,,1
+Okech,uganda,m,Uganda,20,10/12/2019,10,3,ID,3,r,B4,r,1,,yes,yes,,,1
+Okech,uganda,m,Uganda,20,10/12/2019,10,3,ID,4,r,B3,r,1,,no,yes,,,1
+Okech,uganda,m,Uganda,20,10/12/2019,10,3,ID,5,l,B4,l,1,,yes,yes,,,1
+Okech,uganda,m,Uganda,20,10/12/2019,10,3,ID,6,r,B4,r,1,,yes,no,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SD,1,r,,l,0,,,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SD,2,l,,l,1,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SD,3,l,,l,1,,no,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SD,4,r,,r,1,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SD,5,l,,r,0,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SD,6,r,,r,1,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SD,7,l,,l,1,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SD,8,r,,r,1,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SD,9,l,,l,1,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SD,10,r,,r,1,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SD,11,r,,r,1,criterion,no,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,1,l,,l,1,,,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,2,l,,r,0,,no,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,3,r,,l,0,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,4,r,,l,0,,no,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,5,l,,r,0,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,6,r,,l,0,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,7,l,,r,0,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,8,r,,l,0,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,9,l,,r,0,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,10,l,,r,0,,no,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,11,r,,r,1,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,12,r,,l,0,,no,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,13,l,,l,1,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,14,r,,l,0,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,15,l,,l,1,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,16,l,,l,1,,no,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,17,r,,l,0,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,18,l,,l,1,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,19,r,,r,1,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,20,l,,l,1,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,21,r,,r,1,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,22,l,,l,1,,yes,,,,1
+Pasa,uganda,f,Uganda,19,21/10/2019,8,1,SR,23,r,,r,1,SR criterion,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SD,1,r,,l,0,,,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SD,2,l,,l,1,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SD,3,l,,l,1,,no,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SD,4,r,,l,0,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SD,5,l,,l,1,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SD,6,r,,l,0,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SD,7,l,,r,0,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SD,8,r,,l,0,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SD,9,l,,l,1,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SD,10,r,,r,1,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SD,11,r,,r,1,,no,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SD,12,l,,l,1,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SD,13,l,,l,1,,no,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SD,14,r,,r,1,criterion,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,1,r,,l,0,,,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,2,l,,r,0,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,3,r,,l,0,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,4,l,,l,1,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,5,r,,l,0,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,6,l,,l,1,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,7,l,,r,0,,no,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,8,r,,r,1,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,9,r,,l,0,,no,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,10,l,,r,0,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,11,r,,r,1,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,12,l,,r,0,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,13,l,,r,0,,no,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,14,r,,l,0,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,15,l,,r,0,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,16,r,,r,1,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,17,l,,l,1,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,18,r,,r,1,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,19,l,,r,0,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,20,r,,l,0,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,21,r,,l,0,,no,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,22,l,,r,0,,yes,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,23,l,,l,1,,no,,,,1
+Sally,uganda,f,Uganda,28,12/11/2019,8,1,SR,24,r,,r,1,,yes,,,,1
+Sara,uganda,f,Uganda,9,11/12/2019,,3,ID,1,l, B4,l,1,,,,,,1
+Sara,uganda,f,Uganda,9,11/12/2019,,3,ID,2,l, B3,l,1,,no,yes,,,1
+Sara,uganda,f,Uganda,9,11/12/2019,,3,ID,3,r, B4,r,1,,yes,yes,,,1
+Sara,uganda,f,Uganda,9,11/12/2019,,3,ID,4,r, B3,r,1,,no,yes,,,1
+Sara,uganda,f,Uganda,9,11/12/2019,,3,ID,5,l, B4,l,1,,yes,yes,,,1
+Sara,uganda,f,Uganda,9,11/12/2019,,3,ID,6,r, B4,r,1,,yes,no,,,1
+Umugenzi,uganda,m,Uganda,22,10/12/2019,,3,ID,1,l, B4,l,1,,,,,,1
+Umugenzi,uganda,m,Uganda,22,10/12/2019,,3,ID,2,l, B3,l,1,,no,yes,,,1
+Umugenzi,uganda,m,Uganda,22,10/12/2019,,3,ID,3,r, B4,r,1,,yes,yes,,,1
+Umugenzi,uganda,m,Uganda,22,10/12/2019,,3,ID,4,r, B3,r,1,,no,yes,,,1
+Umugenzi,uganda,m,Uganda,22,10/12/2019,,3,ID,5,l, B4,l,1,,yes,yes,,,1
+Umugenzi,uganda,m,Uganda,22,10/12/2019,,3,ID,6,r, B4,r,1,,yes,no,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SD,1,r,,r,1,,,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SD,2,l,,r,0,,yes,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SD,3,l,,l,1,,no,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SD,4,r,,r,1,,yes,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SD,5,l,,l,1,,yes,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SD,6,r,,r,1,,yes,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SD,7,l,,l,1,,yes,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SD,8,r,,r,1,,yes,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,1,l,,r,0,,,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,2,r,,l,0,,yes,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,3,r,,l,0,,no,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,4,l,,r,0,,yes,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,5,l,,r,0,,no,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,6,r,,l,0,,yes,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,7,r,,l,0,,no,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,8,l,,r,0,,yes,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,9,r,,l,0,,yes,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,10,l,,r,0,,yes,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,11,r,,r,1,,yes,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,12,l,,l,1,,yes,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,13,l,,r,0,,no,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,14,r,,r,1,,yes,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,15,r,,r,1,,no,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,16,l,,l,1,,yes,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,17,r,,r,1,,yes,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,18,l,,l,1,,yes,,,,1
+Umutama,uganda,m,Uganda,23,04/12/2019,8,1,SR,19,l,,l,1,,no,,,,1
+Umutama,uganda,m,Uganda,23,05/12/2019,9,2,CD,1,l,B2,l,1,,,,,,1
+Umutama,uganda,m,Uganda,23,05/12/2019,9,2,CD,2,r,B1,l,0,,yes,yes,,,1
+Umutama,uganda,m,Uganda,23,05/12/2019,9,2,CD,3,l,B1,l,1,,yes,no,,,1
+Umutama,uganda,m,Uganda,23,05/12/2019,9,2,CD,4,r,B2,l,0,,yes,yes,,,1
+Umutama,uganda,m,Uganda,23,05/12/2019,9,2,CD,5,l,B1,l,1,,yes,yes,,,1
+Umutama,uganda,m,Uganda,23,05/12/2019,9,2,CD,6,l,B2,l,1,,no,yes,,,1
+Umutama,uganda,m,Uganda,23,05/12/2019,9,2,CD,7,r,B2,r,1,,yes,no,,,1
+Umutama,uganda,m,Uganda,23,05/12/2019,9,2,CD,8,r,B1,r,1,,no,yes,,,1
+Umutama,uganda,m,Uganda,23,05/12/2019,9,2,CD,9,l,B1,l,1,,yes,no,,,1
+Umutama,uganda,m,Uganda,23,05/12/2019,9,2,CD,10,r,B2,r,1,,yes,yes,,,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,1,l,S7,r,0,,,,S8,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,2,r,S8,l,0,,yes,yes,S7,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,3,l,S8,r,0,,yes,no,S7,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,4,r,S7,r,1,,yes,yes,S7,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,5,l,S7,l,1,,yes,no,S7,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,6,r,S8,r,1,,yes,yes,S8,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,7,l,S8,l,1,,yes,no,S8,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,8,r,S7,l,0,,yes,yes,S8,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,9,r,S8,r,1,,no,yes,S8,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,10,l,S7,r,0,,yes,yes,S8,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,11,l,S8,l,1,,no,yes,S8,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,12,r,S7,l,0,,yes,yes,S8,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,13,l,S7,r,0,,yes,no,S8,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,14,r,S8,r,1,,yes,yes,S8,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,15,l,S8,l,1,,yes,no,S8,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,16,r,S7,l,0,,yes,yes,S8,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,17,l,S7,r,0,,yes,no,S8,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,18,r,S7,l,0,,yes,no,S8,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,19,l,S8,l,1,,yes,yes,S8,1,1
+Umutama,uganda,m,Uganda,23,11/12/2019,,4,ED,20,r,S8,r,1,,yes,no,S8,1,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,21,l,S8,l,1,,yes,no,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,22,r,S7,l,0,,yes,yes,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,23,l,S7,r,0,,yes,no,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,24,r,S8,r,1,,yes,yes,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,25,r,S7,l,0,,no,yes,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,26,l,S8,l,1,,yes,yes,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,27,r,S8,r,1,,yes,no,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,28,l,S7,r,0,,yes,yes,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,29,r,S7,l,0,,yes,no,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,30,l,S8,l,1,,yes,yes,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,31,l,S7,r,0,,no,yes,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,32,r,S8,r,1,,yes,yes,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,33,r,S8,r,1,,no,no,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,34,l,S8,l,1,,yes,no,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,35,r,S7,l,0,,yes,yes,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,36,l,S7,r,0,,yes,no,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,37,r,S8,r,1,,yes,yes,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,38,l,S8,l,1,,yes,no,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,39,l,S7,r,0,,no,yes,S8,2,1
+Umutama,uganda,m,Uganda,23,12/12/2019,,5,ED,40,r,S7,l,0,,yes,no,S8,2,1

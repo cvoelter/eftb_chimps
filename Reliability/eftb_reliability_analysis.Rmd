@@ -1,0 +1,244 @@
+---
+title: "eftb_reliability"
+author: "Christoph Voelter"
+date: "03/10/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(irr)
+
+
+
+```
+
+### WM updating 
+```{r}
+reli.WM_updating_data <- read.csv("data/WM updating data_Zsuzsa.csv")
+
+orig.WM_updating_data <- read.csv("data/WM updating data_original.csv")
+
+```
+
+```{r}
+reli.WM_updating_data2  <- reli.WM_updating_data %>% 
+  select(Subject,Trial_number, P1_2nd_c, P2_2nd_c, P1_3rd_c, P2_3rd_c, P1_4th_c, P2_4th_c)%>% 
+  gather(loc, correct_reli, P1_2nd_c, P2_2nd_c, P1_3rd_c, P2_3rd_c, P1_4th_c, P2_4th_c) 
+  
+
+orig.WM_updating_data2 <- orig.WM_updating_data%>% 
+  select(Subject,Trial_number, P1_2nd_c, P2_2nd_c, P1_3rd_c, P2_3rd_c, P1_4th_c, P2_4th_c)%>% 
+  gather(loc, correct_orig, P1_2nd_c, P2_2nd_c, P1_3rd_c, P2_3rd_c, P1_4th_c, P2_4th_c) 
+  
+updating_reli <- orig.WM_updating_data2 %>%
+  full_join(reli.WM_updating_data2)
+
+kdata.updating=cbind(updating_reli$correct_orig, updating_reli$correct_reli)
+kappa2(kdata.updating)
+```
+
+### WM boxes
+
+
+```{r}
+rm(list=ls())
+reli.wm_boxes_data <- read.csv("data/WM boxes data_reliability_Zsuzsa.csv")
+
+orig.wm_boxes_data <- read.csv("data/20200117 WM boxes data_original.csv")
+
+```
+
+```{r}
+
+reli.wm_boxes_data2 <- reli.wm_boxes_data %>%
+  filter(Subject!="Manno")%>% #not video recorded
+  rename(Choice_P1= Choice_P1.1.4._reli, Choice_P2= Choice_P2.1.4._reli)%>%
+  select(Subject, Condition, trial_number, Choice_P1, Choice_P2) %>% 
+  gather(loc, choice_reli, Choice_P1, Choice_P2) 
+  
+
+orig.wm_boxes_data2 <- orig.wm_boxes_data%>% 
+  filter(Subject!="Manno")%>% #not video recorded
+  select(Subject, Condition,trial_number, Choice_P1, Choice_P2)%>% 
+  gather(loc, choice_orig, Choice_P1, Choice_P2) 
+  
+wm_boxes_reli <- orig.wm_boxes_data2 %>%
+  full_join(reli.wm_boxes_data2 )
+
+kdata.wm_boxes=cbind(wm_boxes_reli$choice_orig, wm_boxes_reli$choice_reli)
+kappa2(kdata.wm_boxes)
+```
+
+
+### WM grid
+
+
+```{r}
+rm(list=ls())
+
+reli.wm_grid_data <- read.csv("data/WM grid data_reliability_Zsuzsa.csv")%>%
+  select(Subject, Trial, Type, choice01_reli)
+
+orig.wm_grid_data <- read.csv("data/20200117 WM grid data_orig.csv")%>%
+  select(Subject, Trial, Type, choice01)
+
+wm_grid_reli <- orig.wm_grid_data %>%
+  full_join(reli.wm_grid_data )
+
+kdata.wm_grid=cbind(wm_grid_reli$choice01, wm_grid_reli$choice01_reli)
+kappa2(kdata.wm_grid)
+
+```
+
+### Inhibition grid
+
+
+```{r}
+rm(list=ls())
+reli.inh_grid_data <- read.csv("data/InhGrid_relibility_zsuzsa.csv")%>%
+  select(Subject, Session, trial_number, correct)%>%
+  rename(correct_reli=correct)
+
+orig.inh_grid_data <- read.csv("data/InhGrid_reliability_original.csv")%>%
+  select(Subject, Session, trial_number, correct)%>%
+  rename(correct_orig=correct)
+
+inh_grid_reli <- orig.inh_grid_data %>%
+  full_join(reli.inh_grid_data )
+
+kdata.inh_grid=cbind(inh_grid_reli$correct_orig, inh_grid_reli$correct_reli)
+kappa2(kdata.inh_grid)
+
+inh_grid_reli_agg <- inh_grid_reli %>%
+  group_by(Subject, Session)%>%
+  summarise(correct_orig=mean(correct_orig, na.rm = TRUE), correct_reli=mean(correct_reli, na.rm = TRUE))
+
+
+#Spearman correlation:
+cor.test(inh_grid_reli_agg$correct_orig ,inh_grid_reli_agg$correct_reli, method = "spearman", use ="complete.obs")
+
+```
+
+### Inhibition boxes
+
+
+```{r}
+rm(list=ls())
+reli.inh_boxes_data <- read.csv("data/InhBoxes_reliability_zsuzsa.csv")%>%
+  select(Subject, Session, trial_number, correct)%>%
+  rename(correct_reli=correct)
+
+orig.inh_boxes_data <- read.csv("data/InhBoxes_reliability_original.csv")%>%
+  select(Subject, Session, trial_number, correct)%>%
+  rename(correct_orig=correct)
+
+inh_boxes_reli <- orig.inh_boxes_data %>%
+  inner_join(reli.inh_boxes_data )
+  
+
+
+kdata.inh_boxes=cbind(inh_boxes_reli$correct_orig, inh_boxes_reli$correct_reli)
+kappa2(kdata.inh_boxes)
+
+```
+
+### Inhibition cylinders
+
+
+```{r}
+rm(list=ls())
+reli.inh_cylinders_data <- read.csv("data/InhibitionCylinder_reliability_Zsuzsa.csv")%>%
+  select(Subject, Session, trial_number, open_cylinder)%>%
+  rename(correct_reli=open_cylinder)
+
+orig.inh_cylinder_data <- read.csv("data/InhibitionCylinder_reliability_original.csv")%>%
+  select(Subject, Session, trial_number, open_cylinder)%>%
+  rename(correct_orig=open_cylinder)
+
+inh_cylinders_reli <- orig.inh_cylinder_data %>%
+  inner_join(reli.inh_cylinders_data )
+
+
+inh_cylinders_reli_agg <- inh_cylinders_reli %>%
+  group_by(Subject, Session)%>%
+  summarise(correct_orig=mean(correct_orig, na.rm = TRUE), correct_reli=mean(correct_reli, na.rm = TRUE))
+
+
+kdata.inh_cylinders=cbind(inh_cylinders_reli$correct_orig, inh_cylinders_reli$correct_reli)
+kappa2(kdata.inh_cylinders)
+
+
+#Spearman correlation:
+cor.test(inh_cylinders_reli_agg$correct_orig ,inh_cylinders_reli_agg$correct_reli, method = "spearman", use ="complete.obs")
+
+```
+
+### Shifting boxes
+
+
+```{r}
+rm(list=ls())
+reli.shifting_boxes_data <- read.csv("data/SwitchingBoxes_reliability_Zsuzsa.csv")%>%
+  select(Subject, Condition, Session, trial_number, correct)%>%
+  rename(correct_reli=correct)
+
+
+
+orig.shifting_boxes_data <- read.csv("data/SwitchingBoxes_reliability_original.csv")%>%
+  select(Subject, Condition, Session, trial_number, correct)%>%
+  rename(correct_orig=correct)
+
+shifting_boxes_reli <- orig.shifting_boxes_data %>%
+  inner_join(reli.shifting_boxes_data )
+  
+
+
+kdata.shifting_boxes=cbind(shifting_boxes_reli$correct_orig, shifting_boxes_reli$correct_reli)
+kappa2(kdata.shifting_boxes)
+
+```
+
+### Shifting tray
+
+
+```{r}
+rm(list=ls())
+reli.shifting_try_data <-  read.csv("data/Shifting_tray_data_reliability_Zsuzsa.csv")%>%
+  select(Subject, Session, trial_number, correct_reli)
+
+orig.shifting_tray_data <- read.csv("data/20200119 Shifting_tray_Sweetwaters_final data_original.csv")%>%
+  select(Subject, Session, trial_number, correct)
+
+
+shifting_tray_reli <- orig.shifting_tray_data %>%
+  full_join(reli.shifting_try_data)
+
+kdata.shifting_tray=cbind(shifting_tray_reli$correct, shifting_tray_reli$correct_reli)
+kappa2(kdata.shifting_tray)
+
+
+```
+
+### Shifting shelf
+
+
+```{r}
+rm(list=ls())
+reli.shifting_shelf_data <- read.csv("data/TaskSwitching_Shelf_Zsuzsa.csv")%>%
+  select(Subject, Session, Condition, trial_number, correct_reli)
+
+orig.shifting_shelf_data <- read.csv("data/20200120 TaskSwitching_final Sweetwaters data_original.csv")%>%
+  select(Subject, Session, Condition, trial_number, correct)
+
+
+shifting_shelf_reli <- orig.shifting_shelf_data %>%
+  full_join(reli.shifting_shelf_data)
+
+kdata.shifting_shelf=cbind(shifting_shelf_reli$correct, shifting_shelf_reli$correct_reli)
+kappa2(kdata.shifting_shelf)
+
+
+```

@@ -1,0 +1,404 @@
+---
+title: "EF tasks markdown 2020 - EFA"
+author: "Christoph Voelter"
+date: "Octovber , 2020"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+rm(list=ls())
+
+library(tidyverse)
+library(psych)
+library(nFactors)
+library(summarytools)
+library(corrr)
+library(reshape2)
+library(ggthemes)
+library(ggpubr)
+
+```
+
+### Load data
+
+```{r}
+EF_task_data<-read.csv("EFTB_CFA_data_chimpanzees.csv")
+```
+
+```{r}
+efa.data<-EF_task_data%>%
+  select(-X, -Subject,  -ED, -SD, -SR,-ID, )%>%
+  drop_na%>%
+  rename("WM Updating"="WMUpdating",
+         "WM Boxes"="WMBoxes",
+         "WM Grid"="WMGrid",
+         "Inhibition Cylinders"="Cylinder",
+         "Inhibition Grid"="InhibGrid",
+         "Inhibition Boxes"="GlassCeiling",
+         "Shifting Tray"="Tray",
+         "Shifting Shelf"="Shelf",
+         "Shifting Boxes"="CD_all")
+efa.data<-efa.data%>%
+  select(order(colnames(efa.data)))%>%
+  select(-"WM Grid",-"WM Updating",  -"Inhibition Grid" )
+```
+
+
+Plotting DVs across sites
+
+```{r}
+
+efa.data.site<-read.csv(file="EF_task_individual_corr.csv")%>%
+  select(-ED, -SD, -SR,-ID, -Group, -Sex, -Age)%>%
+  drop_na%>%
+  rename("WM_Updating"="Updating_P1P2.correct",
+         "WM_Boxes"="boxes_correct_newrange",
+         "WM_Grid"="Grid_Distance_newrange",
+         "Inhibition_Grid"="Inh.grid.correct1",
+         "Inhibition_Cylinders"="Inh.cylinders.correct1",
+         "Inhibition_Boxes"="Inh.boxes.correct1",
+         "Shifting_Tray"="Shifting.tray.correct.S2",
+         "Shifting_Shelf"="proportion_switches",
+         "Shifting_Boxes"="CD")
+
+
+
+efa.data.plot<-efa.data.site%>%
+  gather(task, performance, WM_Updating:Shifting_Boxes)%>%
+  mutate(task=str_replace(task, "_", " "), site=fct_recode(site, "Sweetwaters"="kenya", "Ngamba"="uganda"))%>%
+  group_by(task,site)%>%
+  add_count(performance)%>%
+  ungroup()
+
+efa.data.ttests.site<-efa.data.site %>%
+    summarise_each(funs(t.test(.[site == "kenya"], .[site == "uganda"], paired = FALSE, alternative = "two.sided")$p.value), vars = WM_Updating:Shifting_Boxes)
+
+names(efa.data.ttests.site) <- colnames(efa.data.site[2:10])
+
+site.plot<-ggplot(data=efa.data.plot, aes(x=site, y=performance))+
+  geom_boxplot(alpha=0.5, outlier.colour = "white")+
+  geom_point(color="grey", alpha=0.1, size=efa.data.plot$n)+
+  facet_wrap(~task)+
+  theme_few()+
+  ylab("Standardised performance")+ xlab("Site")+
+  stat_compare_means(paired = FALSE, method = "t.test", label.y = 0.95 )
+  
+site.plot
+
+ggsave(site.plot, filename = "graphics/site_plot.png", height=10, width = 10, scale=0.65)
+
+  
+```
+
+
+
+### Correlation matrix based on all participants and all tasks
+```{r echo=FALSE, warning=FALSE}
+
+EF_task_data2 <- read.csv("EFTB_CFA_data_chimpanzees.csv")%>%
+  select(-X, -Subject)%>%
+  rename("WM Updating"="WMUpdating",
+         "WM Boxes"="WMBoxes",
+         "WM Grid"="WMGrid",
+         "Inhibition Cylinders"="Cylinder",
+         "Inhibition Grid"="InhibGrid",
+         "Inhibition Boxes"="GlassCeiling",
+         "Shifting Tray"="Tray",
+         "Shifting Shelf"="Shelf",
+         "Shifting Boxes (CD)"="CD_all",
+         "Shifting Boxes (SD)"="SD",
+         "Shifting Boxes (SR)"="SR",
+         "Shifting Boxes (ID)"="ID",
+         "Shifting Boxes (ED)"="ED")%>%
+  select(order(desc(colnames(.))))
+
+
+  
+library(ggcorrplot)
+corr <- cor(EF_task_data2, use = "pairwise.complete.obs")
+p.mat <- cor_pmat(EF_task_data2, use = "pairwise.complete.obs")
+cormat.all.tasks<- ggcorrplot(corr, hc.order = FALSE,
+  sig.level = 0.05,
+  type = "lower",
+  p.mat = p.mat,
+  insig = c("pch"), pch = 4, pch.col = "darkgrey",
+  pch.cex = 5,
+  lab = TRUE,
+  digits = 2
+) +
+  scale_fill_gradient2(
+    low = "dodgerblue", high = "darkorange",
+    midpoint = 0, limit = c(-1, 1)
+  ) +
+  guides(fill = F) +
+  theme_few(base_size = 14) +
+  theme(
+    axis.text.x = element_text(angle = 90, vjust = 0, hjust = 1),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    plot.margin = unit(c(9, 1, 0, 0), "mm")
+  )
+cormat.all.tasks
+ggsave(cormat.all.tasks, filename="graphics/cormat_all_tasks.png", width=10, height=10, scale=0.65)
+
+
+```
+
+
+# EFA
+
+## Parallel analysis
+
+```{r}
+
+# Determine Number of Factors to Extract
+
+ev <- eigen(cor(efa.data)) # get eigenvalues
+ap <- parallel(subject=nrow(efa.data),var=ncol(efa.data),
+  rep=1000,cent=.5) #parallel analysis using package nFactors
+#This function gives the distribution of the eigenvalues of correlation or a covariance matrices of random uncorrelated standardized normal variables. The mean and a selected quantile of this distribution are returned.
+
+nS <- nScree(x=ev$values, aparallel=ap$eigen$mevpea)#quantile of the eigenvalues distribution is used
+plotnScree(nS) 
+
+#parallel analysis using package psych
+fa.parallel(efa.data, cor="cor",  fm="ml", fa="pc", n.iter = 1000, SMC=TRUE)
+#For comparability with other algorithms (e.g, the paran function in the paran package), setting smc=TRUE will use Squared Multiple Correlation as estimates of communalities. 
+```
+## Scree plot for publication
+```{r}
+#credit: https://rdrr.io/github/Rkabacoff/factorAnalysis/src/R/screePlot.R
+x <- fa.parallel(efa.data, cor = "cor", fm = "ml", fa = "pc", n.iter = 100, SMC = TRUE)
+
+x$fa.simr
+n.iter <- 100
+actual <- x$pc.values
+sim <- x$pc.sim
+nvar <- ncol(efa.data)
+nfact <- x$ncomp
+
+actual <- data.frame(n = 1:nvar, eigenvalue <- actual, type = "actual")
+sim <- data.frame(n = 1:nvar, eigenvalue <- sim, type = "simulated")
+names(actual) <- names(sim) <- c("n", "eigenvalue", "type")
+plotdata <- as.data.frame(rbind(actual, sim))
+
+apatheme <- theme_bw() +
+  theme(
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.background = element_blank(),
+    panel.border = element_blank(),
+    # text=element_text(family='Arial'),
+    legend.title = element_blank(),
+    legend.position = c(.7, .8),
+    axis.line.x = element_line(color = "black"),
+    axis.line.y = element_line(color = "black")
+  )
+
+p <- ggplot(plotdata, aes(x = n, y = eigenvalue, shape = type, color = type)) +
+
+  # Add lines connecting data points
+  geom_line() +
+
+  # Add the data points.
+  geom_point(size = 4) +
+
+  # Label axes and titles
+  labs(
+    y = "Eigenvalue",
+    x = "Number of factors" # ,
+    # title = "Scree Plot",
+    # subtitle = paste0("with parallel analysis (", n.iter, " iterations)"),
+    # caption = "Maximum Likelihood Factoring"
+  ) +
+
+  # Ensure x-axis ranges from 1 to max # of factors,
+  # increasing by one with each 'tick' mark.
+  scale_x_continuous(breaks = min(plotdata$n):max(plotdata$n)) +
+
+  # Ensure y-axis  that it ranges from below the lowest eigenvalue
+  #  to above the highest eigenvalue an increments by .25.
+  scale_y_continuous(breaks = round(seq(
+    from = floor(min(plotdata$eigenvalue)),
+    to = ceiling(max(plotdata$eigenvalue)),
+    by = .5
+  ), 2)) +
+
+  # Manually specify the different shapes to use for actual and simulated data,
+  # in this case, white and black circles.
+  scale_shape_manual(values = c(16, 1)) +
+
+  # Add horizontal line indicating Kaiser Harris criteria
+  geom_hline(yintercept = 1, linetype = "dashed", color = "lightgray") +
+
+  # Add vertical line indicating parallel analysis suggested max # of factors to retain
+  geom_vline(xintercept = nfact, linetype = "dashed") +
+  apatheme
+
+# return plot
+ggsave(p, filename = "graphics/scree_plot_chimp.png", width = 6, height = 6, scale = 0.6)
+
+```
+
+### Bartlett's test of sphericity
+```{r}
+cortest.bartlett(efa.data)
+
+```
+
+### Kaiser-Meyer-Olkin factor adequacy
+```{r}
+#cylinder task excluded due to low Measure of sampling adequacy (<0.3)
+KMO(efa.data)
+
+```
+
+### 2-factor model
+
+```{r}
+fit <- factanal(efa.data, 2, rotation="varimax", cutoff=0, sort=FALSE)
+print(fit, digits=2, cutoff=0, sort=TRUE)
+xx2<-fit$loadings[,]
+
+summary(xx2)
+
+fa.diagram(fit$loadings, digits=2,cut=.2, simple=FALSE,  adj = 3)
+
+```
+### 1-factor model
+
+```{r}
+fit1 <- factanal(efa.data, 1, rotation="varimax", cutoff=0, sort=FALSE)
+print(fit1, digits=2, cutoff=0, sort=FALSE)
+xx1<-fit1$loadings[,]
+
+summary(xx1)
+
+fa.diagram(fit1$loadings, digits=2,cut=.1, simple=FALSE,  adj = 3)
+
+```
+
+### Correlation matrix plot (based on all participants that completed all tasks)
+```{r}
+  get_upper_tri <- function(cormat){
+    cormat[lower.tri(cormat)]<- NA
+    return(cormat)
+  }
+efa.data.rev<-efa.data%>%
+  select(order(desc(colnames(efa.data))))
+
+cormat <- round(cor(efa.data.rev, method="pearson", use = "pairwise.complete.obs"),2)
+upper_tri <- get_upper_tri(cormat)
+melted_cormat=melt(cormat, na.rm = TRUE)
+
+cor.plot<-ggplot(data = melted_cormat, aes(x=Var1, y=Var2, fill=value)) + 
+  geom_tile()+
+  geom_text(aes(Var2, Var1, label = value), color = "black", size = 2) +
+ scale_fill_gradient2(low = "dodgerblue", high = "darkorange", 
+   midpoint = 0, limit = c(-1,1)) +
+  theme_few(base_size=10)+ 
+ #theme(axis.text.x = element_text(angle = 45, vjust = 1, 
+  #  size = 8, hjust = 1), legend.position = "none")+
+  #labs(x="",y="")+
+ #coord_fixed()
+    theme(axis.text.x = element_text(angle = 90, vjust = 0, hjust = 1), 
+        axis.title.x=element_blank(), 
+        axis.title.y=element_blank(), 
+        plot.margin = unit(c(8, 1, 0, 0), "mm")) +
+  guides(fill=F)
+
+cor.plot
+```
+```{r}
+library(ggcorrplot)
+
+pvals<-cor_pmat(efa.data.rev)
+ggcorrplot(cor(efa.data.rev, use = "pairwise.complete.obs"),
+  type = "full",
+  p.mat = pvals,
+  insig = c("pch"), pch = 4, pch.col = "grey",
+  pch.cex = 5,
+  lab = TRUE,
+  digits = 2
+) +
+  scale_fill_gradient2(
+    low = "dodgerblue", high = "darkorange",
+    midpoint = 0, limit = c(-1, 1)
+  ) +
+  guides(fill = F) +
+  theme_few(base_size = 10) +
+  theme(
+    axis.text.x = element_text(angle = 90, vjust = 0, hjust = 1),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    plot.margin = unit(c(8.5, 1, 0, 0), "mm")
+  )
+```
+### Plot: 2-factor model loadings
+```{r}
+loadings <- melt(xx2)
+
+loadings<-loadings%>%
+  rename(Measure="Var1", Factor="Var2")%>%
+  arrange(Factor, Measure)
+
+#2-factor solution
+loading.plot_2fac<-ggplot(loadings, aes(as.factor(desc(Measure)), abs(value), fill=value)) + 
+  facet_wrap(~ Factor, nrow=1) + #place the factors in separate facets
+  geom_bar(stat="identity") + #make the bars
+  coord_flip() + #flip the axes so the test names can be horizontal  
+  #define the fill color gradient: blue=positive, red=negative
+  scale_fill_gradient2(name = "Loading", 
+                       low = "dodgerblue", mid = "white", high = "darkorange", 
+                       midpoint=0, guide=F) +
+  ylab("Loading Strength") + #improve y-axis label
+  theme_few(base_size=10)+ #use a black-and0white theme with set font size
+    theme(panel.spacing = unit(0.8, "lines"),
+          axis.text.y = element_blank(), 
+        axis.title.y = element_blank(), 
+        plot.margin = unit(c(2.3, 3, 12.3, 1), "mm")) 
+```
+
+### Plot: 1-factor model loadings
+
+```{r}
+loadings1 <- melt(xx1)
+
+
+loadings1<-loadings1%>%
+  add_rownames()%>%
+  rename(Measure="rowname")%>%
+  mutate(Factor="Factor 1")%>%
+  mutate_if(is.character,as.factor)%>%
+  arrange(Measure)
+
+#2-factor solution
+loading.plot_1fac<-ggplot(loadings1, aes(as.factor(desc(Measure)), abs(value), fill=value)) +   geom_bar(stat="identity") + #make the bars
+    facet_wrap(~ Factor, nrow=1) + #place the factors in separate facets
+  coord_flip() + #flip the axes so the test names can be horizontal  
+  #define the fill color gradient: blue=positive, red=negative
+  scale_fill_gradient2(name = "Loading", 
+                       low = "dodgerblue", mid = "white", high = "darkorange", 
+                       midpoint=0, guide=F) +
+  ylim(0,1)+
+  ylab("Loading Strength") + #improve y-axis label
+  theme_few(base_size=10)+ #use a black-and0white theme with set font size
+    theme(axis.text.y = element_blank(), 
+        axis.title.y = element_blank(), 
+        plot.margin = unit(c(2.3, 3, 12.3, 1), "mm")) 
+
+loading.plot_1fac
+```
+
+
+```{r}
+library(cowplot)
+efa_plot<-plot_grid(cor.plot, loading.plot_1fac, loading.plot_2fac, labels = c("A", "B", "C"), nrow=1, rel_widths = c(1.9,0.8, 1.6))
+efa_plot
+ggsave(efa_plot, filename = "graphics/efa_chimp_plot_1_and_2factors.png", width = 13, height=6, scale=.55)
+```
+
